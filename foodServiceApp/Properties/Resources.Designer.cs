@@ -103,6 +103,16 @@ namespace foodServiceApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Platter {
+            get {
+                object obj = ResourceManager.GetObject("Platter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Salad {
             get {
                 object obj = ResourceManager.GetObject("Salad", resourceCulture);
