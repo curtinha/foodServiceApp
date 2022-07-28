@@ -62,6 +62,7 @@ namespace foodServiceApp
             this.btn_blank2.Size = new System.Drawing.Size(100, 100);
             this.btn_blank2.TabIndex = 4;
             this.btn_blank2.UseVisualStyleBackColor = false;
+            this.btn_blank2.Click += new System.EventHandler(this.btn_blank2_Click);
             // 
             // lbl_title
             // 
