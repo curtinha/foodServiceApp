@@ -112,7 +112,6 @@ namespace foodServiceApp
             this.btn_seafood.Click += new System.EventHandler(this.btn_seafood_Click);
             this.btn_seafood.MouseEnter += new System.EventHandler(this.btn_seafood_MouseEnter);
             this.btn_seafood.MouseLeave += new System.EventHandler(this.btn_seafood_MouseLeave);
-
             // 
             // btn_chicken
             // 
