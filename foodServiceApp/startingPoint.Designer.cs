@@ -103,12 +103,16 @@ namespace foodServiceApp
             // btn_seafood
             // 
             this.btn_seafood.BackgroundImage = global::foodServiceApp.Properties.Resources.Craw;
-            this.btn_seafood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_seafood.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_seafood.Location = new System.Drawing.Point(460, 84);
             this.btn_seafood.Name = "btn_seafood";
             this.btn_seafood.Size = new System.Drawing.Size(100, 100);
             this.btn_seafood.TabIndex = 6;
             this.btn_seafood.UseVisualStyleBackColor = true;
+            this.btn_seafood.Click += new System.EventHandler(this.btn_seafood_Click);
+            this.btn_seafood.MouseEnter += new System.EventHandler(this.btn_seafood_MouseEnter);
+            this.btn_seafood.MouseLeave += new System.EventHandler(this.btn_seafood_MouseLeave);
+
             // 
             // btn_chicken
             // 
@@ -150,6 +154,7 @@ namespace foodServiceApp
             this.btn_sammy.Size = new System.Drawing.Size(100, 100);
             this.btn_sammy.TabIndex = 0;
             this.btn_sammy.UseVisualStyleBackColor = true;
+            this.btn_sammy.Click += new System.EventHandler(this.btn_sammy_Click);
             // 
             // startingPoint
             // 

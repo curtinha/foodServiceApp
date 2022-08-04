@@ -109,5 +109,10 @@
   <ItemGroup>
     <None Include="Resources\Platter.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Craw_hover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

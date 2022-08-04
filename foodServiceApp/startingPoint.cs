@@ -36,5 +36,25 @@ namespace foodServiceApp
         {
 
         }
+
+        private void btn_sammy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_seafood_MouseEnter(object sender, EventArgs e)
+        {
+            this.btn_seafood.BackgroundImage = ((System.Drawing.Image)(Properties.Resources));
+        }
+
+        private void btn_seafood_MouseLeave(object sender, EventArgs e)
+        {
+            this.btn_seafood.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Craw));
+        }
+
+        private void btn_seafood_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
