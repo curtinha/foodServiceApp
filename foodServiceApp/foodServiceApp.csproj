@@ -117,5 +117,29 @@
   <ItemGroup>
     <None Include="Resources\Craw_hover1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Craw_hover2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meat_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platter_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sammy_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
