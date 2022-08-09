@@ -56,7 +56,7 @@
             this.lbl_AddFood.Size = new System.Drawing.Size(165, 39);
             this.lbl_AddFood.TabIndex = 0;
             this.lbl_AddFood.Text = "Add Food";
-            this.lbl_AddFood.Click += new System.EventHandler(this.label1_Click);
+    
             // 
             // dtp_AddFood
             // 
@@ -90,7 +90,7 @@
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Food Name";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+          
             // 
             // label3
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.lbl_AddFood);
             this.Name = "AddFood";
             this.Text = "Add Food Screen";
-            this.Load += new System.EventHandler(this.Form1_Load);
+         
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
