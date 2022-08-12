@@ -52,6 +52,7 @@ namespace foodServiceApp
             this.btn_blank1.Size = new System.Drawing.Size(100, 100);
             this.btn_blank1.TabIndex = 1;
             this.btn_blank1.UseVisualStyleBackColor = false;
+            this.btn_blank1.Click += new System.EventHandler(this.btn_blank1_Click);
             // 
             // btn_blank2
             // 
@@ -62,6 +63,7 @@ namespace foodServiceApp
             this.btn_blank2.Size = new System.Drawing.Size(100, 100);
             this.btn_blank2.TabIndex = 4;
             this.btn_blank2.UseVisualStyleBackColor = false;
+            this.btn_blank2.Click += new System.EventHandler(this.btn_blank2_Click);
             // 
             // lbl_title
             // 
@@ -85,6 +87,7 @@ namespace foodServiceApp
             this.btn_platter.Size = new System.Drawing.Size(100, 100);
             this.btn_platter.TabIndex = 8;
             this.btn_platter.UseVisualStyleBackColor = false;
+            this.btn_platter.Click += new System.EventHandler(this.btn_platter_Click);
             this.btn_platter.MouseEnter += new System.EventHandler(this.btn_platter_MouseEnter);
             this.btn_platter.MouseLeave += new System.EventHandler(this.btn_platter_MouseLeave);
             // 
@@ -99,6 +102,7 @@ namespace foodServiceApp
             this.btn_Settings.Size = new System.Drawing.Size(100, 100);
             this.btn_Settings.TabIndex = 7;
             this.btn_Settings.UseVisualStyleBackColor = true;
+            this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
             this.btn_Settings.MouseEnter += new System.EventHandler(this.btn_Settings_MouseEnter);
             this.btn_Settings.MouseLeave += new System.EventHandler(this.btn_Settings_MouseLeave);
             // 
@@ -111,6 +115,7 @@ namespace foodServiceApp
             this.btn_seafood.Size = new System.Drawing.Size(100, 100);
             this.btn_seafood.TabIndex = 6;
             this.btn_seafood.UseVisualStyleBackColor = true;
+            this.btn_seafood.Click += new System.EventHandler(this.btn_seafood_Click);
             this.btn_seafood.MouseEnter += new System.EventHandler(this.btn_seafood_MouseEnter);
             this.btn_seafood.MouseLeave += new System.EventHandler(this.btn_seafood_MouseLeave);
             // 
@@ -123,6 +128,7 @@ namespace foodServiceApp
             this.btn_chicken.Size = new System.Drawing.Size(100, 100);
             this.btn_chicken.TabIndex = 5;
             this.btn_chicken.UseVisualStyleBackColor = true;
+            this.btn_chicken.Click += new System.EventHandler(this.btn_chicken_Click);
             this.btn_chicken.MouseEnter += new System.EventHandler(this.btn_chicken_MouseEnter);
             this.btn_chicken.MouseLeave += new System.EventHandler(this.btn_chicken_MouseLeave);
             // 
@@ -135,6 +141,7 @@ namespace foodServiceApp
             this.btn_meat.Size = new System.Drawing.Size(100, 100);
             this.btn_meat.TabIndex = 3;
             this.btn_meat.UseVisualStyleBackColor = true;
+            this.btn_meat.Click += new System.EventHandler(this.btn_meat_Click);
             this.btn_meat.MouseEnter += new System.EventHandler(this.btn_meat_MouseEnter);
             this.btn_meat.MouseLeave += new System.EventHandler(this.btn_meat_MouseLeave);
             // 
@@ -147,6 +154,7 @@ namespace foodServiceApp
             this.btn_salad.Size = new System.Drawing.Size(100, 100);
             this.btn_salad.TabIndex = 2;
             this.btn_salad.UseVisualStyleBackColor = true;
+            this.btn_salad.Click += new System.EventHandler(this.btn_salad_Click);
             this.btn_salad.MouseEnter += new System.EventHandler(this.btn_salad_MouseEnter);
             this.btn_salad.MouseLeave += new System.EventHandler(this.btn_salad_MouseLeave);
             // 
@@ -159,6 +167,7 @@ namespace foodServiceApp
             this.btn_sammy.Size = new System.Drawing.Size(100, 100);
             this.btn_sammy.TabIndex = 0;
             this.btn_sammy.UseVisualStyleBackColor = true;
+            this.btn_sammy.Click += new System.EventHandler(this.btn_sammy_Click);
             this.btn_sammy.MouseEnter += new System.EventHandler(this.btn_sammy_MouseEnter);
             this.btn_sammy.MouseLeave += new System.EventHandler(this.btn_sammy_MouseLeave);
             // 

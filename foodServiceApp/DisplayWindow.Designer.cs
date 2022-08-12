@@ -35,10 +35,10 @@
             // lbl_viewWindow
             // 
             this.lbl_viewWindow.AutoSize = true;
-            this.lbl_viewWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lbl_viewWindow.Location = new System.Drawing.Point(214, 33);
+            this.lbl_viewWindow.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_viewWindow.Location = new System.Drawing.Point(133, 9);
             this.lbl_viewWindow.Name = "lbl_viewWindow";
-            this.lbl_viewWindow.Size = new System.Drawing.Size(350, 39);
+            this.lbl_viewWindow.Size = new System.Drawing.Size(540, 56);
             this.lbl_viewWindow.TabIndex = 0;
             this.lbl_viewWindow.Text = "Food Currently Added";
             // 
@@ -50,6 +50,7 @@
             this.label1.Size = new System.Drawing.Size(166, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "View Foods expiring within x Days";
+            
             // 
             // DisplayWindow
             // 

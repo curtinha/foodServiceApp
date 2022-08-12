@@ -21,8 +21,30 @@ namespace foodServiceApp
 
         private void btn_AddWindow_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Food Details are as follows");
+            MessageBox.Show("Food Details are as follows\nFood:\nFood Type:\nExp Date:");
+            txb_foodName.Text = "";
+            txb_FoodType.Text = "";
 
+
+
+        }
+
+        private void AddFood_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_datemade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Viewwindow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DisplayWindow f1 = new DisplayWindow();
+            f1.ShowDialog();
+            this.Close();
         }
     }
 }

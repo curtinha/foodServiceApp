@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace foodServiceApp
 {
-    public partial class DisplayWindow : Form
+    public partial class Settings : Form
     {
-        public DisplayWindow()
+        public Settings()
         {
             InitializeComponent();
         }
-
-       
     }
 }

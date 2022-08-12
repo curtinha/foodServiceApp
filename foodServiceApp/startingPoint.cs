@@ -97,6 +97,78 @@ namespace foodServiceApp
 
         }
 
+        private void btn_Settings_Click(object sender, EventArgs e)
+        {
+            {
+                
+                Settings f1 = new Settings();
+                f1.ShowDialog();
+                
+            }
+        }
+
+        private void btn_blank2_Click(object sender, EventArgs e)
+        {
+            {
+                MessageBox.Show("This Button is unpopulated - Please Select a Food Icon");
+
+            }
+        }
+
+        private void btn_blank1_Click(object sender, EventArgs e)
+        {
+               {
+                MessageBox.Show("This Button is unpopulated - Please Select a Food Icon");
+               }
+        }
+
+        private void btn_platter_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood f1 = new AddFood();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_chicken_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood f1 = new AddFood();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_salad_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood f1 = new AddFood();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_seafood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood f1 = new AddFood();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_meat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood f1 = new AddFood();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_sammy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood f1 = new AddFood();
+            f1.ShowDialog();
+            this.Close();
+        }
     }
 }
  
