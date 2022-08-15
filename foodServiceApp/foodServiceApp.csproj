@@ -58,6 +58,7 @@
     <Compile Include="DisplayWindow.Designer.cs">
       <DependentUpon>DisplayWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="food.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>

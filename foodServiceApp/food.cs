@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace foodServiceApp
 {
-    public class windowManager
+    public class food
     {
+        // food details
 
-        public windowManager()
-        {
-        
-        }
+        private string name;
+        private string type;
+        private string expDate;
+ 
     }
-
-
-
 }
