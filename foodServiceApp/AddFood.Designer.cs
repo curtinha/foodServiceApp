@@ -51,7 +51,7 @@
             // 
             this.lbl_AddFood.AutoSize = true;
             this.lbl_AddFood.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AddFood.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_AddFood.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_AddFood.Location = new System.Drawing.Point(169, 43);
             this.lbl_AddFood.Name = "lbl_AddFood";
             this.lbl_AddFood.Size = new System.Drawing.Size(510, 56);
@@ -73,7 +73,7 @@
             // 
             this.lbl_datemade.AutoSize = true;
             this.lbl_datemade.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_datemade.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_datemade.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_datemade.Location = new System.Drawing.Point(235, 227);
             this.lbl_datemade.Name = "lbl_datemade";
             this.lbl_datemade.Size = new System.Drawing.Size(126, 25);
@@ -92,7 +92,7 @@
             // 
             this.lbl_foodname.AutoSize = true;
             this.lbl_foodname.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_foodname.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_foodname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_foodname.Location = new System.Drawing.Point(235, 159);
             this.lbl_foodname.Name = "lbl_foodname";
             this.lbl_foodname.Size = new System.Drawing.Size(131, 25);
@@ -101,8 +101,10 @@
             // 
             // btn_AddWindow
             // 
-            this.btn_AddWindow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_AddWindow.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_AddWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_AddWindow.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddWindow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_AddWindow.Location = new System.Drawing.Point(244, 313);
             this.btn_AddWindow.Name = "btn_AddWindow";
             this.btn_AddWindow.Size = new System.Drawing.Size(132, 23);
@@ -115,7 +117,7 @@
             // 
             this.lbl_foodType.AutoSize = true;
             this.lbl_foodType.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_foodType.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_foodType.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_foodType.Location = new System.Drawing.Point(235, 190);
             this.lbl_foodType.Name = "lbl_foodType";
             this.lbl_foodType.Size = new System.Drawing.Size(116, 25);
@@ -131,10 +133,10 @@
             // 
             // btn_Viewwindow
             // 
-            this.btn_Viewwindow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_Viewwindow.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Viewwindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Viewwindow.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Viewwindow.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_Viewwindow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_Viewwindow.Location = new System.Drawing.Point(440, 313);
             this.btn_Viewwindow.Name = "btn_Viewwindow";
             this.btn_Viewwindow.Size = new System.Drawing.Size(132, 23);
@@ -160,6 +162,7 @@
             this.Controls.Add(this.lbl_AddFood);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddFood";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Food Screen";
             this.Load += new System.EventHandler(this.AddFood_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

@@ -17,6 +17,30 @@ namespace foodServiceApp
             InitializeComponent();
         }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_viewFoods_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DisplayWindow f1 = new DisplayWindow();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_addFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood f1 = new AddFood();
+            f1.ShowDialog();
+            this.Close();
+        }
     }
 }

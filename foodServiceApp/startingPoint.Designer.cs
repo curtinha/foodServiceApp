@@ -30,8 +30,6 @@ namespace foodServiceApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startingPoint));
-            this.btn_blank1 = new System.Windows.Forms.Button();
-            this.btn_blank2 = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
             this.btn_platter = new System.Windows.Forms.Button();
             this.btn_Settings = new System.Windows.Forms.Button();
@@ -39,37 +37,15 @@ namespace foodServiceApp
             this.btn_chicken = new System.Windows.Forms.Button();
             this.btn_meat = new System.Windows.Forms.Button();
             this.btn_salad = new System.Windows.Forms.Button();
+            this.btn_viewWindow = new System.Windows.Forms.Button();
             this.btn_sammy = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btn_blank1
-            // 
-            this.btn_blank1.BackColor = System.Drawing.Color.White;
-            this.btn_blank1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_blank1.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_blank1.Location = new System.Drawing.Point(248, 296);
-            this.btn_blank1.Name = "btn_blank1";
-            this.btn_blank1.Size = new System.Drawing.Size(100, 100);
-            this.btn_blank1.TabIndex = 1;
-            this.btn_blank1.UseVisualStyleBackColor = false;
-            this.btn_blank1.Click += new System.EventHandler(this.btn_blank1_Click);
-            // 
-            // btn_blank2
-            // 
-            this.btn_blank2.BackColor = System.Drawing.Color.White;
-            this.btn_blank2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_blank2.Location = new System.Drawing.Point(354, 296);
-            this.btn_blank2.Name = "btn_blank2";
-            this.btn_blank2.Size = new System.Drawing.Size(100, 100);
-            this.btn_blank2.TabIndex = 4;
-            this.btn_blank2.UseVisualStyleBackColor = false;
-            this.btn_blank2.Click += new System.EventHandler(this.btn_blank2_Click);
             // 
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbl_title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_title.Location = new System.Drawing.Point(193, 9);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(438, 56);
@@ -158,6 +134,19 @@ namespace foodServiceApp
             this.btn_salad.MouseEnter += new System.EventHandler(this.btn_salad_MouseEnter);
             this.btn_salad.MouseLeave += new System.EventHandler(this.btn_salad_MouseLeave);
             // 
+            // btn_viewWindow
+            // 
+            this.btn_viewWindow.BackColor = System.Drawing.Color.White;
+            this.btn_viewWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_viewWindow.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_viewWindow.Image = global::foodServiceApp.Properties.Resources.Store_Window2;
+            this.btn_viewWindow.Location = new System.Drawing.Point(248, 296);
+            this.btn_viewWindow.Name = "btn_viewWindow";
+            this.btn_viewWindow.Size = new System.Drawing.Size(206, 100);
+            this.btn_viewWindow.TabIndex = 1;
+            this.btn_viewWindow.UseVisualStyleBackColor = false;
+            this.btn_viewWindow.Click += new System.EventHandler(this.btn_blank1_Click);
+            // 
             // btn_sammy
             // 
             this.btn_sammy.BackgroundImage = global::foodServiceApp.Properties.Resources.sammy;
@@ -182,13 +171,13 @@ namespace foodServiceApp
             this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.btn_seafood);
             this.Controls.Add(this.btn_chicken);
-            this.Controls.Add(this.btn_blank2);
             this.Controls.Add(this.btn_meat);
             this.Controls.Add(this.btn_salad);
-            this.Controls.Add(this.btn_blank1);
+            this.Controls.Add(this.btn_viewWindow);
             this.Controls.Add(this.btn_sammy);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "startingPoint";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "`";
             this.Load += new System.EventHandler(this.startingPoint_Load);
             this.ResumeLayout(false);
@@ -199,10 +188,9 @@ namespace foodServiceApp
         #endregion
 
         private System.Windows.Forms.Button btn_sammy;
-        private System.Windows.Forms.Button btn_blank1;
+        private System.Windows.Forms.Button btn_viewWindow;
         private System.Windows.Forms.Button btn_salad;
         private System.Windows.Forms.Button btn_chicken;
-        private System.Windows.Forms.Button btn_blank2;
         private System.Windows.Forms.Button btn_meat;
         private System.Windows.Forms.Button btn_platter;
         private System.Windows.Forms.Button btn_Settings;

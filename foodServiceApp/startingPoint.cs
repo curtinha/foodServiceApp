@@ -117,9 +117,10 @@ namespace foodServiceApp
 
         private void btn_blank1_Click(object sender, EventArgs e)
         {
-               {
-                MessageBox.Show("This Button is unpopulated - Please Select a Food Icon");
-               }
+            this.Hide();
+            DisplayWindow f1 = new DisplayWindow();
+            f1.ShowDialog();
+            this.Close();
         }
 
         private void btn_platter_Click(object sender, EventArgs e)

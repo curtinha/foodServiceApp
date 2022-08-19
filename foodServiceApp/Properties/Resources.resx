@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="salad_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salad_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Store Window1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Store Window1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Store Window" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Store Window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Platter_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Platter_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chick" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Meat_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Meat_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Salad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Salad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +145,11 @@
   <data name="Settings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Craw" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Craw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Platter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Platter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salad_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salad_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sammy_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sammy_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,16 +163,22 @@
   <data name="Craw_hover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Craw_hover2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Platter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Platter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Settings2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Modified_Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Modified_Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Craw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Craw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Meat_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Meat_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Settings_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Settings2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Settings2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Store Window2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Store Window2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
