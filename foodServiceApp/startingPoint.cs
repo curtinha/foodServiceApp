@@ -12,9 +12,14 @@ namespace foodServiceApp
 {
     public partial class startingPoint : Form
     {
-        public startingPoint()
+
+        windowManager fm = new windowManager();
+
+        public startingPoint(windowManager fm)
         {
+            this.fm = fm;   
             InitializeComponent();
+           
         }
 
         private void startingPoint_Load(object sender, EventArgs e)

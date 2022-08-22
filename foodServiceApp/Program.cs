@@ -14,9 +14,10 @@ namespace foodServiceApp
         [STAThread]
         static void Main()
         {
+            windowManager fm = new windowManager();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new startingPoint());
+            Application.Run(new startingPoint(fm));
         }
     }
 }
