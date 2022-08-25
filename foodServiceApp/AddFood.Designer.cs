@@ -38,8 +38,8 @@
             this.lbl_foodname = new System.Windows.Forms.Label();
             this.btn_AddWindow = new System.Windows.Forms.Button();
             this.lbl_foodType = new System.Windows.Forms.Label();
-            this.txb_FoodType = new System.Windows.Forms.TextBox();
             this.btn_Viewwindow = new System.Windows.Forms.Button();
+            this.cbx_foodType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,16 +124,10 @@
             this.lbl_foodType.TabIndex = 8;
             this.lbl_foodType.Text = "Food Type";
             // 
-            // txb_FoodType
-            // 
-            this.txb_FoodType.Location = new System.Drawing.Point(367, 195);
-            this.txb_FoodType.Name = "txb_FoodType";
-            this.txb_FoodType.Size = new System.Drawing.Size(200, 20);
-            this.txb_FoodType.TabIndex = 7;
-            // 
             // btn_Viewwindow
             // 
             this.btn_Viewwindow.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_Viewwindow.Enabled = false;
             this.btn_Viewwindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Viewwindow.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Viewwindow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -145,21 +139,31 @@
             this.btn_Viewwindow.UseVisualStyleBackColor = false;
             this.btn_Viewwindow.Click += new System.EventHandler(this.btn_Viewwindow_Click);
             // 
+            // cbx_foodType
+            // 
+            this.cbx_foodType.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_foodType.FormattingEnabled = true;
+            this.cbx_foodType.Location = new System.Drawing.Point(367, 191);
+            this.cbx_foodType.Name = "cbx_foodType";
+            this.cbx_foodType.Size = new System.Drawing.Size(200, 24);
+            this.cbx_foodType.TabIndex = 10;
+            // 
             // AddFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbx_foodType);
             this.Controls.Add(this.btn_Viewwindow);
             this.Controls.Add(this.lbl_foodType);
-            this.Controls.Add(this.txb_FoodType);
             this.Controls.Add(this.btn_AddWindow);
             this.Controls.Add(this.lbl_foodname);
             this.Controls.Add(this.txb_foodName);
             this.Controls.Add(this.lbl_datemade);
             this.Controls.Add(this.dtp_AddFood);
             this.Controls.Add(this.lbl_AddFood);
+            this.Enabled = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddFood";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -182,6 +186,6 @@
         private System.Windows.Forms.Button btn_AddWindow;
         private System.Windows.Forms.Button btn_Viewwindow;
         private System.Windows.Forms.Label lbl_foodType;
-        private System.Windows.Forms.TextBox txb_FoodType;
+        private System.Windows.Forms.ComboBox cbx_foodType;
     }
 }

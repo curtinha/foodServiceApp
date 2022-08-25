@@ -106,7 +106,7 @@ namespace foodServiceApp
         {
             {
                 
-                Settings f1 = new Settings();
+                Settings f1 = new Settings(fm);
                 f1.ShowDialog();
                 
             }
@@ -131,7 +131,7 @@ namespace foodServiceApp
         private void btn_platter_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood();
+            AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
         }
@@ -139,7 +139,7 @@ namespace foodServiceApp
         private void btn_chicken_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood();
+            AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
         }
@@ -147,7 +147,7 @@ namespace foodServiceApp
         private void btn_salad_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood();
+            AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
         }
@@ -155,7 +155,7 @@ namespace foodServiceApp
         private void btn_seafood_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood();
+            AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
         }
@@ -163,7 +163,7 @@ namespace foodServiceApp
         private void btn_meat_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood();
+            AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
         }
@@ -171,7 +171,7 @@ namespace foodServiceApp
         private void btn_sammy_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood();
+            AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
         }

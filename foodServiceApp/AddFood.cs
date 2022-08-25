@@ -12,18 +12,27 @@ namespace foodServiceApp
 {
     public partial class AddFood : Form
     {
-        public AddFood()
+
+        windowManager fm = new windowManager();
+
+
+
+
+
+        public AddFood(windowManager fm)
         {
             InitializeComponent();
+            this.fm = fm;
         }
 
- 
+
 
         private void btn_AddWindow_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Food Details are as follows\nFood:\nFood Type:\nExp Date:");
-            txb_foodName.Text = "";
-            txb_FoodType.Text = "";
+            clearfields();
+            btn_Viewwindow.Enabled = true;
+
 
 
 
@@ -45,6 +54,15 @@ namespace foodServiceApp
             DisplayWindow f1 = new DisplayWindow();
             f1.ShowDialog();
             this.Close();
+        }
+
+
+        public void clearfields() // resets all fields in the form
+        {
+            txb_foodName.Text = "";
+            cbx_foodType.Text = "";
+            dtp_AddFood.Text = "";
+
         }
     }
 }
