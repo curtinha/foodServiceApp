@@ -15,10 +15,6 @@ namespace foodServiceApp
 
         windowManager fm = new windowManager();
 
-
-
-
-
         public AddFood(windowManager fm)
         {
             InitializeComponent();
@@ -51,7 +47,7 @@ namespace foodServiceApp
         private void btn_Viewwindow_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DisplayWindow f1 = new DisplayWindow();
+            DisplayWindow f1 = new DisplayWindow(fm);
             f1.ShowDialog();
             this.Close();
         }
@@ -62,6 +58,11 @@ namespace foodServiceApp
             txb_foodName.Text = "";
             cbx_foodType.Text = "";
             dtp_AddFood.Text = "";
+
+        }
+
+        private void txb_foodName_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

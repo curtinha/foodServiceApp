@@ -145,7 +145,7 @@ namespace foodServiceApp
             this.btn_viewWindow.Size = new System.Drawing.Size(206, 100);
             this.btn_viewWindow.TabIndex = 1;
             this.btn_viewWindow.UseVisualStyleBackColor = false;
-           
+            this.btn_viewWindow.Click += new System.EventHandler(this.btn_viewWindow_Click_1);
             // 
             // btn_sammy
             // 

@@ -87,6 +87,7 @@
             this.txb_foodName.Name = "txb_foodName";
             this.txb_foodName.Size = new System.Drawing.Size(200, 20);
             this.txb_foodName.TabIndex = 3;
+            this.txb_foodName.TextChanged += new System.EventHandler(this.txb_foodName_TextChanged);
             // 
             // lbl_foodname
             // 

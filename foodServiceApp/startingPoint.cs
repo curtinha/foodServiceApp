@@ -125,13 +125,7 @@ namespace foodServiceApp
         }
 
        
-        private void btn_viewWindow_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DisplayWindow f1 = new DisplayWindow();
-            f1.ShowDialog();
-            this.Close();
-        }
+    
 
         private void btn_platter_Click(object sender, EventArgs e)
         {
@@ -179,6 +173,14 @@ namespace foodServiceApp
             AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
+        }
+
+        private void btn_viewWindow_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            DisplayWindow window = new DisplayWindow(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
     }
 }

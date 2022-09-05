@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace foodServiceApp
 {
+
+  
     public partial class DisplayWindow : Form
     {
-        public DisplayWindow()
+        windowManager fm = new windowManager();
+
+        public DisplayWindow(windowManager fm)
         {
+            this.fm = fm;
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -30,7 +36,7 @@ namespace foodServiceApp
         private void btn_viewFoods_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DisplayWindow f1 = new DisplayWindow();
+            DisplayWindow f1 = new DisplayWindow(fm);
             f1.ShowDialog();
             this.Close();
         }
@@ -38,7 +44,7 @@ namespace foodServiceApp
         private void btn_addFood_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood();
+            AddFood f1 = new AddFood(fm);
             f1.ShowDialog();
             this.Close();
         }
