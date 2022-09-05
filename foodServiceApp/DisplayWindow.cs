@@ -42,5 +42,10 @@ namespace foodServiceApp
             f1.ShowDialog();
             this.Close();
         }
+
+        private void DisplayWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

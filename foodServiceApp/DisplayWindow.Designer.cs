@@ -146,6 +146,7 @@
             this.Name = "DisplayWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DisplayWindow";
+            this.Load += new System.EventHandler(this.DisplayWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

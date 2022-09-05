@@ -102,6 +102,18 @@ namespace foodServiceApp
 
         }
 
+
+        private void btn_viewWindow_MouseEnter(object sender, EventArgs e)
+        {
+            this.btn_chicken.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Store_Window_Hover_));
+        }
+
+        private void btn_viewWindow_MouseLeave(object sender, EventArgs e)
+        {
+            this.btn_chicken.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Store_Window_Hover_));
+
+        }
+
         private void btn_Settings_Click(object sender, EventArgs e)
         {
             {
@@ -112,15 +124,8 @@ namespace foodServiceApp
             }
         }
 
-        private void btn_blank2_Click(object sender, EventArgs e)
-        {
-            {
-                MessageBox.Show("This Button is unpopulated - Please Select a Food Icon");
-
-            }
-        }
-
-        private void btn_blank1_Click(object sender, EventArgs e)
+       
+        private void btn_viewWindow_Click(object sender, EventArgs e)
         {
             this.Hide();
             DisplayWindow f1 = new DisplayWindow();
