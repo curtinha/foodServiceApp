@@ -35,18 +35,15 @@ namespace foodServiceApp
 
         private void btn_viewFoods_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DisplayWindow f1 = new DisplayWindow(fm);
-            f1.ShowDialog();
-            this.Close();
+            
         }
 
         private void btn_addFood_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood(fm);
-            f1.ShowDialog();
-            this.Close();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void DisplayWindow_Load(object sender, EventArgs e)

@@ -67,7 +67,6 @@ namespace foodServiceApp
 
         }
 
-
          private void btn_Settings_MouseEnter(object sender, EventArgs e)
         {
             this.btn_Settings.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Settings_Hover));
@@ -89,7 +88,6 @@ namespace foodServiceApp
             this.btn_salad.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Salad));
 
         }
-
 
         private void btn_chicken_MouseEnter(object sender, EventArgs e)
         {
@@ -130,49 +128,49 @@ namespace foodServiceApp
         private void btn_platter_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood(fm);
-            f1.ShowDialog();
-            this.Close();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void btn_chicken_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood(fm);
-            f1.ShowDialog();
-            this.Close();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void btn_salad_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood(fm);
-            f1.ShowDialog();
-            this.Close();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void btn_seafood_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood(fm);
-            f1.ShowDialog();
-            this.Close();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void btn_meat_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood(fm);
-            f1.ShowDialog();
-            this.Close();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void btn_sammy_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddFood f1 = new AddFood(fm);
-            f1.ShowDialog();
-            this.Close();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void btn_viewWindow_Click_1(object sender, EventArgs e)
