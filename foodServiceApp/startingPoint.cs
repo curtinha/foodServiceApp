@@ -8,18 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace foodServiceApp
+
 {
     public partial class startingPoint : Form
     {
+       
 
-        windowManager fm = new windowManager();
+         windowManager fm = new windowManager();
 
         public startingPoint(windowManager fm)
         {
             this.fm = fm;   
             InitializeComponent();
-           
+            
         }
 
         private void startingPoint_Load(object sender, EventArgs e)
@@ -167,6 +170,10 @@ namespace foodServiceApp
 
         private void btn_sammy_Click(object sender, EventArgs e)
         {
+            //index = 0;
+
+
+
             this.Hide();
             AddFood window = new AddFood(fm);
             window.FormClosed += (s, args) => this.Close();

@@ -14,6 +14,10 @@ namespace foodServiceApp
     {
 
         windowManager fm = new windowManager();
+       
+
+      
+
 
         public AddFood(windowManager fm)
         {
@@ -62,6 +66,19 @@ namespace foodServiceApp
         }
 
         private void txb_foodName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+        private void cbx_foodType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

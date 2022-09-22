@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFood));
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.lbl_AddFood = new System.Windows.Forms.Label();
             this.dtp_AddFood = new System.Windows.Forms.DateTimePicker();
             this.lbl_datemade = new System.Windows.Forms.Label();
@@ -40,12 +38,7 @@
             this.lbl_foodType = new System.Windows.Forms.Label();
             this.btn_Viewwindow = new System.Windows.Forms.Button();
             this.cbx_foodType = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // lbl_AddFood
             // 
@@ -93,7 +86,7 @@
             // 
             this.lbl_foodname.AutoSize = true;
             this.lbl_foodname.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_foodname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_foodname.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lbl_foodname.Location = new System.Drawing.Point(235, 159);
             this.lbl_foodname.Name = "lbl_foodname";
             this.lbl_foodname.Size = new System.Drawing.Size(131, 25);
@@ -148,6 +141,7 @@
             this.cbx_foodType.Name = "cbx_foodType";
             this.cbx_foodType.Size = new System.Drawing.Size(200, 24);
             this.cbx_foodType.TabIndex = 10;
+            this.cbx_foodType.SelectedIndexChanged += new System.EventHandler(this.cbx_foodType_SelectedIndexChanged);
             // 
             // AddFood
             // 
@@ -164,13 +158,11 @@
             this.Controls.Add(this.lbl_datemade);
             this.Controls.Add(this.dtp_AddFood);
             this.Controls.Add(this.lbl_AddFood);
-            this.Enabled = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddFood";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Food Screen";
             this.Load += new System.EventHandler(this.AddFood_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,7 +170,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+    
         private System.Windows.Forms.Label lbl_AddFood;
         private System.Windows.Forms.Label lbl_foodname;
         private System.Windows.Forms.TextBox txb_foodName;
