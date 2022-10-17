@@ -29,9 +29,26 @@ namespace foodServiceApp
 
         private void btn_AddWindow_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Food Details are as follows\nFood:\nFood Type:\nExp Date:");
-            clearfields();
-            btn_Viewwindow.Enabled = true;
+            if (txb_foodName.Text == "")
+            {
+                MessageBox.Show("Please Enter a Food  ", "Error");
+                txb_foodName.Focus();
+            }
+            else if(cbx_foodType.SelectedIndex == -1)
+            {
+               MessageBox.Show("Please Select a Type  ", "Error");
+                cbx_foodType.Focus();
+            }
+            else
+            {
+                
+                MessageBox.Show("Food Added!\nProduct Name: " + txb_foodName.Text + "\nProduct Type: " + cbx_foodType.Text + "\nProduction Date: " + dtp_AddFood.Text);
+                clearfields();
+                btn_Viewwindow.Enabled = true;
+                
+            }
+
+
 
 
 
@@ -60,7 +77,7 @@ namespace foodServiceApp
         public void clearfields() // resets all fields in the form
         {
             txb_foodName.Text = "";
-            cbx_foodType.Text = "";
+            cbx_foodType.SelectedIndex = -1;
             dtp_AddFood.Text = "";
 
         }

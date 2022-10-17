@@ -135,8 +135,17 @@
             // 
             // cbx_foodType
             // 
+            this.cbx_foodType.AllowDrop = true;
+            this.cbx_foodType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_foodType.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_foodType.FormattingEnabled = true;
+            this.cbx_foodType.Items.AddRange(new object[] {
+            "Seafood",
+            "Meat",
+            "Chicken",
+            "Salad",
+            "Sandwich",
+            "Platter"});
             this.cbx_foodType.Location = new System.Drawing.Point(367, 191);
             this.cbx_foodType.Name = "cbx_foodType";
             this.cbx_foodType.Size = new System.Drawing.Size(200, 24);
