@@ -14,10 +14,6 @@ namespace foodServiceApp
     {
 
         windowManager fm = new windowManager();
-       
-
-      
-
 
         public AddFood(windowManager fm)
         {

@@ -183,9 +183,9 @@ namespace foodServiceApp
         private void btn_viewWindow_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            DisplayWindow window = new DisplayWindow(fm);
-            window.FormClosed += (s, args) => this.Close();
-            window.Show();
+            var DisplayWindow = new DisplayWindow(fm);
+            DisplayWindow.FormClosed += (s, args) => this.Close();
+            DisplayWindow.Show();
         }
     }
 }
