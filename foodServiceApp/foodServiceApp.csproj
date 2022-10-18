@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="food.cs" />
     <Compile Include="foodType.cs" />
+    <Compile Include="Global.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -14,6 +14,7 @@ namespace foodServiceApp
         private string species;
         private string name;
         private List<int> consumptions = new List<int>();
+        
 
 
 

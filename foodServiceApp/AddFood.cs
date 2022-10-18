@@ -13,12 +13,13 @@ namespace foodServiceApp
     public partial class AddFood : Form
     {
 
-        windowManager fm = new windowManager();
+        windowManager fm;
 
         public AddFood(windowManager fm)
         {
             InitializeComponent();
             this.fm = fm;
+            cbx_foodType.SelectedIndex = Global.foodIndex;
         }
 
 
@@ -64,9 +65,9 @@ namespace foodServiceApp
         private void btn_Viewwindow_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DisplayWindow f1 = new DisplayWindow(fm);
-            f1.ShowDialog();
-            this.Close();
+            DisplayWindow window = new DisplayWindow(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
 
@@ -90,6 +91,8 @@ namespace foodServiceApp
         {
 
         }
+
+       
 
         private void label1_Click(object sender, EventArgs e)
         {

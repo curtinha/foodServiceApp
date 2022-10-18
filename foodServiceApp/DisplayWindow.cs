@@ -14,7 +14,7 @@ namespace foodServiceApp
   
     public partial class DisplayWindow : Form
     {
-        windowManager fm = new windowManager();
+        windowManager fm;
 
         public DisplayWindow(windowManager fm)
         {
@@ -41,14 +41,16 @@ namespace foodServiceApp
         private void btn_addFood_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var AddFood = new AddFood(fm);
-            AddFood.FormClosed += (s, args) => this.Close();
-            AddFood.Show();
+            AddFood window = new AddFood(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
         private void DisplayWindow_Load(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }

@@ -130,14 +130,16 @@ namespace foodServiceApp
 
         private void btn_platter_Click(object sender, EventArgs e)
         {
+            Global.foodIndex = 5;   
             this.Hide();
             AddFood window = new AddFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
+            
         }
 
         private void btn_chicken_Click(object sender, EventArgs e)
-        {
+        {   Global.foodIndex = 2;
             this.Hide();
             AddFood window = new AddFood(fm);
             window.FormClosed += (s, args) => this.Close();
@@ -145,7 +147,7 @@ namespace foodServiceApp
         }
 
         private void btn_salad_Click(object sender, EventArgs e)
-        {
+        {   Global.foodIndex = 3;
             this.Hide();
             AddFood window = new AddFood(fm);
             window.FormClosed += (s, args) => this.Close();
@@ -154,6 +156,7 @@ namespace foodServiceApp
 
         private void btn_seafood_Click(object sender, EventArgs e)
         {
+            Global.foodIndex = 0;
             this.Hide();
             AddFood window = new AddFood(fm);
             window.FormClosed += (s, args) => this.Close();
@@ -162,6 +165,7 @@ namespace foodServiceApp
 
         private void btn_meat_Click(object sender, EventArgs e)
         {
+            Global.foodIndex = 1;
             this.Hide();
             AddFood window = new AddFood(fm);
             window.FormClosed += (s, args) => this.Close();
@@ -170,17 +174,14 @@ namespace foodServiceApp
 
         private void btn_sammy_Click(object sender, EventArgs e)
         {
-            //index = 0;
-
-
-
+            Global.foodIndex = 4;
             this.Hide();
             AddFood window = new AddFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
 
-        private void btn_viewWindow_Click_1(object sender, EventArgs e)
+        private void btn_viewWindow_Click(object sender, EventArgs e)
         {
             this.Hide();
             var DisplayWindow = new DisplayWindow(fm);
