@@ -175,12 +175,14 @@ namespace foodServiceApp
             window.Show();
         }
 
-        private void btn_viewWindow_Click(object sender, EventArgs e)
+       
+
+        private void btn_viewWindow_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            var DisplayWindow = new DisplayWindow(fm);
-            DisplayWindow.FormClosed += (s, args) => this.Close();
-            DisplayWindow.Show();
+            DisplayWindow window = new DisplayWindow(fm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
     }
 }

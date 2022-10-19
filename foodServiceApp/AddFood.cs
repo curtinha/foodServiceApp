@@ -69,6 +69,7 @@ namespace foodServiceApp
             txb_foodName.Text = "";
             dtp_AddFood.Text = "";
             Global.foodIndex = -1;
+            cbx_foodType.SelectedIndex = -1;
 
         }
 

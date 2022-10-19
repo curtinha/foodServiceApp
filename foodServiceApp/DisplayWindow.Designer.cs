@@ -81,11 +81,11 @@
             this.cbx_viewFood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_viewFood.FormattingEnabled = true;
             this.cbx_viewFood.Items.AddRange(new object[] {
+            "Today",
             "In 1 Day",
             "In 2 Days",
             "In 3 Days",
-            "In 4 Days",
-            ""});
+            "In 4 Days"});
             this.cbx_viewFood.Location = new System.Drawing.Point(255, 120);
             this.cbx_viewFood.Name = "cbx_viewFood";
             this.cbx_viewFood.Size = new System.Drawing.Size(121, 21);
@@ -123,11 +123,12 @@
             this.btn_viewFoods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_viewFoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_viewFoods.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_viewFoods.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_viewFoods.Location = new System.Drawing.Point(255, 337);
             this.btn_viewFoods.Name = "btn_viewFoods";
             this.btn_viewFoods.Size = new System.Drawing.Size(154, 46);
             this.btn_viewFoods.TabIndex = 7;
-            this.btn_viewFoods.Text = "View All Foods ";
+            this.btn_viewFoods.Text = "View All";
             this.btn_viewFoods.UseVisualStyleBackColor = false;
             // 
             // btn_addFood
