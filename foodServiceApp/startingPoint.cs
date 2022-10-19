@@ -14,9 +14,7 @@ namespace foodServiceApp
 {
     public partial class startingPoint : Form
     {
-       
-
-         windowManager fm = new windowManager();
+         windowManager fm = new windowManager(); // creates new instance of window manager
 
         public startingPoint(windowManager fm)
         {
@@ -126,7 +124,7 @@ namespace foodServiceApp
         }
 
        
-    
+    // global foodIndex variable sets future cbx control corresponding to option selected (ease of use)
 
         private void btn_platter_Click(object sender, EventArgs e)
         {

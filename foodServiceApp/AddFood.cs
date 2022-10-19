@@ -19,22 +19,24 @@ namespace foodServiceApp
         {
             InitializeComponent();
             this.fm = fm;
-            cbx_foodType.SelectedIndex = Global.foodIndex;
+            cbx_foodType.SelectedIndex = Global.foodIndex; // carries through selected user food option
         }
 
 
 
         private void btn_AddWindow_Click(object sender, EventArgs e)
-        {
+        { // data verification loop - prevents user from entering nothing
             if (txb_foodName.Text == "")
             {
                 MessageBox.Show("Please Enter a Food  ", "Error");
                 txb_foodName.Focus();
+                lbl_foodname.ForeColor = Color.Red;
             }
             else if(cbx_foodType.SelectedIndex == -1)
             {
                MessageBox.Show("Please Select a Type  ", "Error");
                 cbx_foodType.Focus();
+                lbl_foodType.ForeColor = Color.Red;
             }
             else
             {
@@ -73,9 +75,11 @@ namespace foodServiceApp
 
         public void clearfields() // resets all fields in the form
         {
+            lbl_foodname.ForeColor = Color.WhiteSmoke;
+            lbl_foodType.ForeColor = Color.WhiteSmoke;
             txb_foodName.Text = "";
-            cbx_foodType.SelectedIndex = -1;
             dtp_AddFood.Text = "";
+            Global.foodIndex = -1;
 
         }
 
