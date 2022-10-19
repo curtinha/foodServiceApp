@@ -25,6 +25,11 @@ namespace foodServiceApp
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         //private void btn_submitSettings_Click(object sender, EventArgs e)
         //{
@@ -48,7 +53,7 @@ namespace foodServiceApp
         //    nud_cost.Value = settings[0];  // updates the animal cost according to which index has been changed in the NUD }
 
 
-        
+
 
 
     }
