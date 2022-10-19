@@ -75,7 +75,6 @@
             this.lbl_datemade.Size = new System.Drawing.Size(155, 31);
             this.lbl_datemade.TabIndex = 2;
             this.lbl_datemade.Text = "Date Made";
-            this.lbl_datemade.Click += new System.EventHandler(this.lbl_datemade_Click);
             // 
             // txb_foodName
             // 
@@ -85,7 +84,7 @@
             this.txb_foodName.Name = "txb_foodName";
             this.txb_foodName.Size = new System.Drawing.Size(265, 22);
             this.txb_foodName.TabIndex = 3;
-            this.txb_foodName.TextChanged += new System.EventHandler(this.txb_foodName_TextChanged);
+
             // 
             // lbl_foodname
             // 
@@ -160,7 +159,7 @@
             this.cbx_foodType.Name = "cbx_foodType";
             this.cbx_foodType.Size = new System.Drawing.Size(265, 28);
             this.cbx_foodType.TabIndex = 10;
-            this.cbx_foodType.SelectedIndexChanged += new System.EventHandler(this.cbx_foodType_SelectedIndexChanged);
+
             // 
             // AddFood
             // 

@@ -21,23 +21,7 @@ namespace foodServiceApp
             this.fm = fm;
             InitializeComponent();
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_viewFoods_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        }       
         private void btn_addFood_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -51,9 +35,6 @@ namespace foodServiceApp
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

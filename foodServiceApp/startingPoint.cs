@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace foodServiceApp
 
 {
@@ -100,8 +99,6 @@ namespace foodServiceApp
             this.btn_chicken.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.chick));
 
         }
-
-
         private void btn_viewWindow_MouseEnter(object sender, EventArgs e)
         {
             this.btn_chicken.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Store_Window_Hover_));
@@ -122,7 +119,6 @@ namespace foodServiceApp
                 
             }
         }
-
        
     // global foodIndex variable sets future cbx control corresponding to option selected (ease of use)
 

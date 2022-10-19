@@ -145,7 +145,6 @@ namespace foodServiceApp
             this.btn_viewWindow.Size = new System.Drawing.Size(206, 100);
             this.btn_viewWindow.TabIndex = 1;
             this.btn_viewWindow.UseVisualStyleBackColor = false;
-            
             // 
             // btn_sammy
             // 
@@ -179,7 +178,7 @@ namespace foodServiceApp
             this.MaximizeBox = false;
             this.Name = "startingPoint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "`";
+            this.Text = "Add a Food";
             this.Load += new System.EventHandler(this.startingPoint_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -12,7 +12,7 @@ namespace foodServiceApp
 {
     public partial class Settings : Form
     {
-        windowManager fm = new windowManager();
+        windowManager fm;
 
         public Settings(windowManager fm)
         {
@@ -20,41 +20,10 @@ namespace foodServiceApp
             this.fm = fm;
         }
 
-        private void Settings_Load(object sender, EventArgs e)
+        private void btn_home_Click(object sender, EventArgs e) // returns the user back to the add food page (closes the settings overlay)
         {
-
+            this.Close();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        //private void btn_submitSettings_Click(object sender, EventArgs e)
-        //{
-
-        //    am.SetSpeciesParameters(cbx_species.Text, nud_cost.Value);
-
-
-        //    this.Hide();
-        //    HomePage window = new HomePage(am);
-        //    window.FormClosed += (s, args) => this.Close();
-        //    window.Show();
-
-
-
-
-        //}
-
-        //private void cbx_species_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    List<decimal> settings = am.GetAnimalSettings(cbx_species.Text);
-        //    nud_cost.Value = settings[0];  // updates the animal cost according to which index has been changed in the NUD }
-
-
-
-
 
     }
 }

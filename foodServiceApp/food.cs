@@ -15,10 +15,6 @@ namespace foodServiceApp
         private string name;
         private List<int> consumptions = new List<int>();
         
-
-
-
-
         // methods
         // constructor
 

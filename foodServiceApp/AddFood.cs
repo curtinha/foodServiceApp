@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace foodServiceApp
 {
     public partial class AddFood : Form
@@ -21,7 +20,6 @@ namespace foodServiceApp
             this.fm = fm;
             cbx_foodType.SelectedIndex = Global.foodIndex; // carries through selected user food option
         }
-
 
 
         private void btn_AddWindow_Click(object sender, EventArgs e)
@@ -47,11 +45,6 @@ namespace foodServiceApp
                 
             }
 
-
-
-
-
-
         }
 
         private void AddFood_Load(object sender, EventArgs e)
@@ -59,10 +52,6 @@ namespace foodServiceApp
 
         }
 
-        private void lbl_datemade_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_Viewwindow_Click(object sender, EventArgs e)
         {
@@ -83,24 +72,5 @@ namespace foodServiceApp
 
         }
 
-        private void txb_foodName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-        private void cbx_foodType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
