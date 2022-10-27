@@ -158,7 +158,9 @@
             this.Controls.Add(this.lbl_category);
             this.Controls.Add(this.lbl_exp);
             this.Controls.Add(this.lbl_viewWindow);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DisplayWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Current Foods in Display";

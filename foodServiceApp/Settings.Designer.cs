@@ -62,7 +62,7 @@
             "Sandwich",
             "Platter"});
             this.cbx_foodName.Location = new System.Drawing.Point(448, 129);
-            this.cbx_foodName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_foodName.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_foodName.Name = "cbx_foodName";
             this.cbx_foodName.Size = new System.Drawing.Size(133, 21);
             this.cbx_foodName.TabIndex = 11;
@@ -81,7 +81,7 @@
             "6 Days",
             "7 Days"});
             this.cbx_expDate.Location = new System.Drawing.Point(448, 237);
-            this.cbx_expDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_expDate.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_expDate.Name = "cbx_expDate";
             this.cbx_expDate.Size = new System.Drawing.Size(133, 21);
             this.cbx_expDate.TabIndex = 12;
@@ -97,7 +97,6 @@
             this.lbl_food.Size = new System.Drawing.Size(98, 20);
             this.lbl_food.TabIndex = 13;
             this.lbl_food.Text = "Food Type:";
-     
             // 
             // lbl_expValue
             // 
@@ -110,7 +109,6 @@
             this.lbl_expValue.Size = new System.Drawing.Size(195, 20);
             this.lbl_expValue.TabIndex = 14;
             this.lbl_expValue.Text = "Enter Display Duration:\r\n";
-           
             // 
             // btn_home
             // 
@@ -139,11 +137,12 @@
             this.Controls.Add(this.cbx_foodName);
             this.Controls.Add(this.lbl_title);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
-          
             this.ResumeLayout(false);
             this.PerformLayout();
 

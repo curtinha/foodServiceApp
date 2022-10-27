@@ -175,6 +175,7 @@ namespace foodServiceApp
             this.Controls.Add(this.btn_salad);
             this.Controls.Add(this.btn_viewWindow);
             this.Controls.Add(this.btn_sammy);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "startingPoint";
