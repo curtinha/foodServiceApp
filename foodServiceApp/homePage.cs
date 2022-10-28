@@ -11,21 +11,31 @@ using System.Windows.Forms;
 namespace foodServiceApp
 
 {
-    public partial class startingPoint : Form
+    public partial class homePage : Form
     {
          windowManager fm = new windowManager(); // creates new instance of window manager
 
-        public startingPoint(windowManager fm)
+        public homePage(windowManager fm)
         {
             this.fm = fm;   
             InitializeComponent();
+         
+
+        }
+
+
+
+        private void homePage_Load(object sender, EventArgs e)
+        {
             
         }
 
-        private void startingPoint_Load(object sender, EventArgs e)
+        private void homePage_Shown(object sender, EventArgs e)
         {
-
+           MessageBox.Show("Welcome to the Food Service App \nPlease click an icon or View the current Display Window"); // displays welcome message
+            
         }
+
         private void btn_sammy_MouseEnter(object sender, EventArgs e)
         {
             this.btn_sammy.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.sammy_hover));
@@ -110,7 +120,7 @@ namespace foodServiceApp
 
         }
 
-        private void btn_Settings_Click(object sender, EventArgs e)
+        private void btn_Settings_Click(object sender, EventArgs e) // loads the settings tab
         {
             {
                 
@@ -122,11 +132,13 @@ namespace foodServiceApp
        
     // global foodIndex variable sets future cbx control corresponding to option selected (ease of use)
 
+    // click methods load the new page with the correct index selected 
+
         private void btn_platter_Click(object sender, EventArgs e)
         {
             Global.foodIndex = 5;   
             this.Hide();
-            AddFood window = new AddFood(fm);
+            addFood window = new addFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
             
@@ -135,7 +147,7 @@ namespace foodServiceApp
         private void btn_chicken_Click(object sender, EventArgs e)
         {   Global.foodIndex = 2;
             this.Hide();
-            AddFood window = new AddFood(fm);
+            addFood window = new addFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -143,7 +155,7 @@ namespace foodServiceApp
         private void btn_salad_Click(object sender, EventArgs e)
         {   Global.foodIndex = 3;
             this.Hide();
-            AddFood window = new AddFood(fm);
+            addFood window = new addFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -152,7 +164,7 @@ namespace foodServiceApp
         {
             Global.foodIndex = 0;
             this.Hide();
-            AddFood window = new AddFood(fm);
+            addFood window = new addFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -161,7 +173,7 @@ namespace foodServiceApp
         {
             Global.foodIndex = 1;
             this.Hide();
-            AddFood window = new AddFood(fm);
+            addFood window = new addFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -170,17 +182,17 @@ namespace foodServiceApp
         {
             Global.foodIndex = 4;
             this.Hide();
-            AddFood window = new AddFood(fm);
+            addFood window = new addFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
 
-       
+       // loads the window 
 
         private void btn_viewWindow_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            DisplayWindow window = new DisplayWindow(fm);
+            displayWindow window = new displayWindow(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

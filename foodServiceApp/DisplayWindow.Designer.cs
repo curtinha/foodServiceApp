@@ -1,6 +1,6 @@
 ﻿namespace foodServiceApp
 {
-    partial class DisplayWindow
+    partial class displayWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayWindow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(displayWindow));
             this.lbl_viewWindow = new System.Windows.Forms.Label();
             this.lbl_exp = new System.Windows.Forms.Label();
             this.lbl_category = new System.Windows.Forms.Label();
@@ -36,7 +36,7 @@
             this.cbx_viewCategory = new System.Windows.Forms.ComboBox();
             this.lvw_database = new System.Windows.Forms.ListView();
             this.btn_viewFoods = new System.Windows.Forms.Button();
-            this.btn_addFood = new System.Windows.Forms.Button();
+            this.btn_addFood= new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_viewWindow
@@ -164,7 +164,7 @@
             this.Name = "DisplayWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Current Foods in Display";
-            this.Load += new System.EventHandler(this.DisplayWindow_Load);
+            this.Load += new System.EventHandler(this.displayWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

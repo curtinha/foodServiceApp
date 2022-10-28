@@ -8,6 +8,6 @@ namespace foodServiceApp
 {
      class Global
     {
-        public static int foodIndex;
+        public static int foodIndex; // creates the global variable
     }
 }

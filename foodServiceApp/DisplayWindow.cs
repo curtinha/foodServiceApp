@@ -12,25 +12,25 @@ namespace foodServiceApp
 {
 
   
-    public partial class DisplayWindow : Form
+    public partial class displayWindow : Form
     {
         windowManager fm;
 
-        public DisplayWindow(windowManager fm)
+        public displayWindow(windowManager fm)
         {
             this.fm = fm;
             InitializeComponent();
 
         }       
-        private void btn_addFood_Click(object sender, EventArgs e)
+        private void btn_addFood_Click(object sender, EventArgs e) // shows add food window
         {
             this.Hide();
-            AddFood window = new AddFood(fm);
+            addFood window = new addFood(fm);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
 
-        private void DisplayWindow_Load(object sender, EventArgs e)
+        private void displayWindow_Load(object sender, EventArgs e)
         {
 
         }

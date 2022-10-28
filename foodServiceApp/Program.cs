@@ -17,7 +17,7 @@ namespace foodServiceApp
             windowManager fm = new windowManager();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new startingPoint(fm));
+            Application.Run(new homePage(fm));
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace foodServiceApp
 {
-    partial class startingPoint
+    partial class homePage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace foodServiceApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startingPoint));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homePage));
             this.lbl_title = new System.Windows.Forms.Label();
             this.btn_platter = new System.Windows.Forms.Button();
             this.btn_Settings = new System.Windows.Forms.Button();
@@ -160,7 +160,7 @@ namespace foodServiceApp
             this.btn_sammy.MouseEnter += new System.EventHandler(this.btn_sammy_MouseEnter);
             this.btn_sammy.MouseLeave += new System.EventHandler(this.btn_sammy_MouseLeave);
             // 
-            // startingPoint
+            // homePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,12 +178,13 @@ namespace foodServiceApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "startingPoint";
+            this.Name = "homePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a Food";
-            this.Load += new System.EventHandler(this.startingPoint_Load);
+            this.Load += new System.EventHandler(this.homePage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.Shown += new System.EventHandler(this.homePage_Shown);
 
         }
 
