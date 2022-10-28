@@ -77,14 +77,14 @@ namespace foodServiceApp
 
         }
 
-         private void btn_Settings_MouseEnter(object sender, EventArgs e)
+         private void btn_settings_MouseEnter(object sender, EventArgs e)
         {
-            this.btn_Settings.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Settings_Hover));
+            this.btn_settings.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.settings_Hover));
         }
 
-        private void btn_Settings_MouseLeave(object sender, EventArgs e)
+        private void btn_settings_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_Settings.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Settings2));
+            this.btn_settings.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.settings2));
 
         }
 
@@ -120,11 +120,11 @@ namespace foodServiceApp
 
         }
 
-        private void btn_Settings_Click(object sender, EventArgs e) // loads the settings tab
+        private void btn_settings_Click(object sender, EventArgs e) // loads the settings tab
         {
             {
                 
-                Settings f1 = new Settings(fm);
+                settings f1 = new settings(fm);
                 f1.ShowDialog();
                 
             }

@@ -1,6 +1,6 @@
 ﻿namespace foodServiceApp
 {
-    partial class Settings
+    partial class settings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settings));
             this.lbl_title = new System.Windows.Forms.Label();
             this.cbx_foodName = new System.Windows.Forms.ComboBox();
             this.cbx_expDate = new System.Windows.Forms.ComboBox();
@@ -47,7 +47,7 @@
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(205, 55);
             this.lbl_title.TabIndex = 10;
-            this.lbl_title.Text = "Settings";
+            this.lbl_title.Text = "settings";
             // 
             // cbx_foodName
             // 
@@ -124,7 +124,7 @@
             this.btn_home.UseVisualStyleBackColor = false;
             this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
-            // Settings
+            // settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,9 +140,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Settings";
+            this.Name = "settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Settings";
+            this.Text = "settings";
             this.ResumeLayout(false);
             this.PerformLayout();
 

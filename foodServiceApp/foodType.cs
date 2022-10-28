@@ -33,7 +33,7 @@ namespace foodServiceApp
             return foodCost;
         }
 
-        public List<decimal> GetSettings()  // calls my settings for that animal type
+        public List<decimal> Getsettings()  // calls my settings for that animal type
         {
             List<decimal> settings = new List<decimal>();
             settings.Add(foodCost);

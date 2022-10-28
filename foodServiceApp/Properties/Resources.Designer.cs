@@ -133,9 +133,9 @@ namespace foodServiceApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Modified_Settings {
+        internal static System.Drawing.Bitmap Modified_settings {
             get {
-                object obj = ResourceManager.GetObject("Modified_Settings", resourceCulture);
+                object obj = ResourceManager.GetObject("Modified_settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace foodServiceApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Settings {
+        internal static System.Drawing.Bitmap settings {
             get {
-                object obj = ResourceManager.GetObject("Settings", resourceCulture);
+                object obj = ResourceManager.GetObject("settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace foodServiceApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Settings_Hover {
+        internal static System.Drawing.Bitmap settings_Hover {
             get {
-                object obj = ResourceManager.GetObject("Settings_Hover", resourceCulture);
+                object obj = ResourceManager.GetObject("settings_Hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +223,9 @@ namespace foodServiceApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Settings1 {
+        internal static System.Drawing.Bitmap settings1 {
             get {
-                object obj = ResourceManager.GetObject("Settings1", resourceCulture);
+                object obj = ResourceManager.GetObject("settings1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace foodServiceApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Settings2 {
+        internal static System.Drawing.Bitmap settings2 {
             get {
-                object obj = ResourceManager.GetObject("Settings2", resourceCulture);
+                object obj = ResourceManager.GetObject("settings2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

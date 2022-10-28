@@ -32,7 +32,7 @@ namespace foodServiceApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homePage));
             this.lbl_title = new System.Windows.Forms.Label();
             this.btn_platter = new System.Windows.Forms.Button();
-            this.btn_Settings = new System.Windows.Forms.Button();
+            this.btn_settings = new System.Windows.Forms.Button();
             this.btn_seafood = new System.Windows.Forms.Button();
             this.btn_chicken = new System.Windows.Forms.Button();
             this.btn_meat = new System.Windows.Forms.Button();
@@ -67,20 +67,20 @@ namespace foodServiceApp
             this.btn_platter.MouseEnter += new System.EventHandler(this.btn_platter_MouseEnter);
             this.btn_platter.MouseLeave += new System.EventHandler(this.btn_platter_MouseLeave);
             // 
-            // btn_Settings
+            // btn_settings
             // 
-            this.btn_Settings.BackgroundImage = global::foodServiceApp.Properties.Resources.Settings2;
-            this.btn_Settings.FlatAppearance.BorderSize = 0;
-            this.btn_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Settings.Location = new System.Drawing.Point(460, 296);
-            this.btn_Settings.Name = "btn_Settings";
-            this.btn_Settings.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_Settings.Size = new System.Drawing.Size(100, 100);
-            this.btn_Settings.TabIndex = 7;
-            this.btn_Settings.UseVisualStyleBackColor = true;
-            this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
-            this.btn_Settings.MouseEnter += new System.EventHandler(this.btn_Settings_MouseEnter);
-            this.btn_Settings.MouseLeave += new System.EventHandler(this.btn_Settings_MouseLeave);
+            this.btn_settings.BackgroundImage = global::foodServiceApp.Properties.Resources.settings2;
+            this.btn_settings.FlatAppearance.BorderSize = 0;
+            this.btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_settings.Location = new System.Drawing.Point(460, 296);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_settings.Size = new System.Drawing.Size(100, 100);
+            this.btn_settings.TabIndex = 7;
+            this.btn_settings.UseVisualStyleBackColor = true;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
+            this.btn_settings.MouseEnter += new System.EventHandler(this.btn_settings_MouseEnter);
+            this.btn_settings.MouseLeave += new System.EventHandler(this.btn_settings_MouseLeave);
             // 
             // btn_seafood
             // 
@@ -168,7 +168,7 @@ namespace foodServiceApp
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.btn_platter);
-            this.Controls.Add(this.btn_Settings);
+            this.Controls.Add(this.btn_settings);
             this.Controls.Add(this.btn_seafood);
             this.Controls.Add(this.btn_chicken);
             this.Controls.Add(this.btn_meat);
@@ -196,7 +196,7 @@ namespace foodServiceApp
         private System.Windows.Forms.Button btn_chicken;
         private System.Windows.Forms.Button btn_meat;
         private System.Windows.Forms.Button btn_platter;
-        private System.Windows.Forms.Button btn_Settings;
+        private System.Windows.Forms.Button btn_settings;
         private System.Windows.Forms.Button btn_seafood;
         private System.Windows.Forms.Label lbl_title;
     }
