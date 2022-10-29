@@ -32,18 +32,19 @@ namespace foodServiceApp
 
         private void homePage_Shown(object sender, EventArgs e)
         {
-           MessageBox.Show("Welcome to the Food Service App \nPlease click an icon or View the current Display Window"); // displays welcome message
+           MessageBox.Show("Welcome to the Food Service App \nPlease click an food to add or View the current Display Window"); // displays welcome message
             
         }
 
-        private void btn_sammy_MouseEnter(object sender, EventArgs e)
+        // the following methods change the image when the mouse hovers over them
+        private void btn_sandwich_MouseEnter(object sender, EventArgs e)
         {
-            this.btn_sammy.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.sammy_hover));
+            this.btn_sandwich.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.sandwich_hover));
         }
 
-        private void btn_sammy_MouseLeave(object sender, EventArgs e)
+        private void btn_sandwich_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_sammy.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.sammy));
+            this.btn_sandwich.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.sandwich));
         }
 
         private void btn_seafood_MouseEnter(object sender, EventArgs e)
@@ -178,7 +179,7 @@ namespace foodServiceApp
             window.Show();
         }
 
-        private void btn_sammy_Click(object sender, EventArgs e)
+        private void btn_sandwich_Click(object sender, EventArgs e)
         {
             Global.foodIndex = 4;
             this.Hide();

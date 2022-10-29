@@ -19,13 +19,18 @@ namespace foodServiceApp
             cbx_foodType.SelectedIndex = Global.foodIndex; // carries through selected user food option
         }
 
+        private void addFood_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_addWindow_Click(object sender, EventArgs e)
         { // data verification loop - prevents user from entering nothing
             if (txb_foodName.Text == "")
             {
                 MessageBox.Show("Please Enter a Food  ", "Error");
                 txb_foodName.Focus();
-                lbl_foodname.ForeColor = Color.Red;
+                lbl_foodname.ForeColor = Color.Red; // changes the forms elements to red to inform the user of what they need to add
             }
             else if(cbx_foodType.SelectedIndex == -1)
             {
@@ -38,19 +43,13 @@ namespace foodServiceApp
                 
                 MessageBox.Show("Food Added!\nProduct Name: " + txb_foodName.Text + "\nProduct Type: " + cbx_foodType.Text + "\nProduction Date: " + dtp_addFood.Text);
                 clearfields();
-                btn_viewWindow.Enabled = true;
+                btn_viewWindow.Enabled = true; // allows the user to view what foods they have added 
                 
             }
 
         }
 
-        private void addFood_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void btn_viewWindow_Click(object sender, EventArgs e) // loads window form
+        private void btn_viewWindow_Click(object sender, EventArgs e) // loads view window form
         {
             this.Hide();
             displayWindow window = new displayWindow(fm);

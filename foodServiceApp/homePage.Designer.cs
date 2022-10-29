@@ -38,7 +38,7 @@ namespace foodServiceApp
             this.btn_meat = new System.Windows.Forms.Button();
             this.btn_salad = new System.Windows.Forms.Button();
             this.btn_viewWindow = new System.Windows.Forms.Button();
-            this.btn_sammy = new System.Windows.Forms.Button();
+            this.btn_sandwich = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_title
@@ -147,18 +147,18 @@ namespace foodServiceApp
             this.btn_viewWindow.UseVisualStyleBackColor = false;
             this.btn_viewWindow.Click += new System.EventHandler(this.btn_viewWindow_Click_1);
             // 
-            // btn_sammy
+            // btn_sandwich
             // 
-            this.btn_sammy.BackgroundImage = global::foodServiceApp.Properties.Resources.sammy;
-            this.btn_sammy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sammy.Location = new System.Drawing.Point(248, 84);
-            this.btn_sammy.Name = "btn_sammy";
-            this.btn_sammy.Size = new System.Drawing.Size(100, 100);
-            this.btn_sammy.TabIndex = 0;
-            this.btn_sammy.UseVisualStyleBackColor = true;
-            this.btn_sammy.Click += new System.EventHandler(this.btn_sammy_Click);
-            this.btn_sammy.MouseEnter += new System.EventHandler(this.btn_sammy_MouseEnter);
-            this.btn_sammy.MouseLeave += new System.EventHandler(this.btn_sammy_MouseLeave);
+            this.btn_sandwich.BackgroundImage = global::foodServiceApp.Properties.Resources.sandwich;
+            this.btn_sandwich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sandwich.Location = new System.Drawing.Point(248, 84);
+            this.btn_sandwich.Name = "btn_sandwich";
+            this.btn_sandwich.Size = new System.Drawing.Size(100, 100);
+            this.btn_sandwich.TabIndex = 0;
+            this.btn_sandwich.UseVisualStyleBackColor = true;
+            this.btn_sandwich.Click += new System.EventHandler(this.btn_sandwich_Click);
+            this.btn_sandwich.MouseEnter += new System.EventHandler(this.btn_sandwich_MouseEnter);
+            this.btn_sandwich.MouseLeave += new System.EventHandler(this.btn_sandwich_MouseLeave);
             // 
             // homePage
             // 
@@ -174,7 +174,7 @@ namespace foodServiceApp
             this.Controls.Add(this.btn_meat);
             this.Controls.Add(this.btn_salad);
             this.Controls.Add(this.btn_viewWindow);
-            this.Controls.Add(this.btn_sammy);
+            this.Controls.Add(this.btn_sandwich);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -190,7 +190,7 @@ namespace foodServiceApp
 
         #endregion
 
-        private System.Windows.Forms.Button btn_sammy;
+        private System.Windows.Forms.Button btn_sandwich;
         private System.Windows.Forms.Button btn_viewWindow;
         private System.Windows.Forms.Button btn_salad;
         private System.Windows.Forms.Button btn_chicken;
