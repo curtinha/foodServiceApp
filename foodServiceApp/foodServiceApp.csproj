@@ -78,11 +78,11 @@
     <Compile Include="food.cs" />
     <Compile Include="foodType.cs" />
     <Compile Include="Global.cs" />
-    <Compile Include="settings.cs">
+    <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="settings.Designer.cs">
-      <DependentUpon>settings.cs</DependentUpon>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="homePage.cs">
       <SubType>Form</SubType>
@@ -92,6 +92,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="windowDBDataSet.cs">
+      <DependentUpon>windowDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="windowDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>windowDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="windowManager.cs" />
     <EmbeddedResource Include="addFood.resx">
       <DependentUpon>addFood.cs</DependentUpon>
@@ -109,8 +117,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="settings.resx">
-      <DependentUpon>settings.cs</DependentUpon>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homePage.resx">
       <DependentUpon>homePage.cs</DependentUpon>
@@ -124,15 +132,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="windowDBDataSet.xsc">
+      <DependentUpon>windowDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="windowDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>windowDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="windowDBDataSet.xss">
+      <DependentUpon>windowDBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Settings.png" />
+    <None Include="Resources\settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Settings1.png" />
+    <None Include="Resources\settings1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Modified_Settings.png" />
@@ -144,7 +163,7 @@
     <None Include="Resources\Craw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sandwich.png" />
+    <None Include="Resources\sammy.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chick.png" />
@@ -179,13 +198,13 @@
     <None Include="Resources\salad_hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sandwich_hover.png" />
+    <None Include="Resources\sammy_hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Settings_Hover.png" />
+    <None Include="Resources\settings_Hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Settings2.png" />
+    <None Include="Resources\settings2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Store Window.png" />
@@ -200,6 +219,19 @@
     <None Include="Resources\Store Window Hover .png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\dbo.Table.sql" />
+    <Content Include="Resources\dbo.windowTable.sql" />
+    <Content Include="Resources\sandwich.png" />
+    <Content Include="Resources\sandwich_hover.png" />
+    <Content Include="windowDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="windowDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>windowDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -210,15 +242,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="window.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="window_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>window.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

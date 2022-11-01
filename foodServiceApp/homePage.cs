@@ -44,7 +44,7 @@ namespace foodServiceApp
 
         private void btn_sandwich_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_sandwich.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.sandwich));
+            this.btn_sandwich.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.sandwich1));
         }
 
         private void btn_seafood_MouseEnter(object sender, EventArgs e)

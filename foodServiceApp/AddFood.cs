@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 using System.Data.SqlClient;
 
 
@@ -14,16 +15,21 @@ namespace foodServiceApp
 {
     public partial class addFood : Form
     {
+        string connectionString;
+        SqlConnection connection;
+
         windowManager fm;
         public addFood(windowManager fm)
         {
             InitializeComponent();
             this.fm = fm;
             cbx_foodType.SelectedIndex = Global.foodIndex; // carries through selected user food option
+            connectionString = ConfigurationManager.ConnectionStrings["foodServiceApp.Properties.Settings.windowDBConnectionString"].ConnectionString;
         }
 
         private void addFood_Load(object sender, EventArgs e)
         {
+            
 
         }
 

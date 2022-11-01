@@ -31,8 +31,8 @@ namespace foodServiceApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homePage));
             this.lbl_title = new System.Windows.Forms.Label();
-            this.btn_platter = new System.Windows.Forms.Button();
             this.btn_settings = new System.Windows.Forms.Button();
+            this.btn_platter = new System.Windows.Forms.Button();
             this.btn_seafood = new System.Windows.Forms.Button();
             this.btn_chicken = new System.Windows.Forms.Button();
             this.btn_meat = new System.Windows.Forms.Button();
@@ -52,21 +52,6 @@ namespace foodServiceApp
             this.lbl_title.TabIndex = 9;
             this.lbl_title.Text = "Food Display App\r\n";
             // 
-            // btn_platter
-            // 
-            this.btn_platter.BackColor = System.Drawing.Color.White;
-            this.btn_platter.BackgroundImage = global::foodServiceApp.Properties.Resources.Platter;
-            this.btn_platter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_platter.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_platter.Location = new System.Drawing.Point(460, 190);
-            this.btn_platter.Name = "btn_platter";
-            this.btn_platter.Size = new System.Drawing.Size(100, 100);
-            this.btn_platter.TabIndex = 8;
-            this.btn_platter.UseVisualStyleBackColor = false;
-            this.btn_platter.Click += new System.EventHandler(this.btn_platter_Click);
-            this.btn_platter.MouseEnter += new System.EventHandler(this.btn_platter_MouseEnter);
-            this.btn_platter.MouseLeave += new System.EventHandler(this.btn_platter_MouseLeave);
-            // 
             // btn_settings
             // 
             this.btn_settings.BackgroundImage = global::foodServiceApp.Properties.Resources.settings2;
@@ -81,6 +66,21 @@ namespace foodServiceApp
             this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             this.btn_settings.MouseEnter += new System.EventHandler(this.btn_settings_MouseEnter);
             this.btn_settings.MouseLeave += new System.EventHandler(this.btn_settings_MouseLeave);
+            // 
+            // btn_platter
+            // 
+            this.btn_platter.BackColor = System.Drawing.Color.White;
+            this.btn_platter.BackgroundImage = global::foodServiceApp.Properties.Resources.Platter;
+            this.btn_platter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_platter.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_platter.Location = new System.Drawing.Point(460, 190);
+            this.btn_platter.Name = "btn_platter";
+            this.btn_platter.Size = new System.Drawing.Size(100, 100);
+            this.btn_platter.TabIndex = 8;
+            this.btn_platter.UseVisualStyleBackColor = false;
+            this.btn_platter.Click += new System.EventHandler(this.btn_platter_Click);
+            this.btn_platter.MouseEnter += new System.EventHandler(this.btn_platter_MouseEnter);
+            this.btn_platter.MouseLeave += new System.EventHandler(this.btn_platter_MouseLeave);
             // 
             // btn_seafood
             // 
@@ -182,9 +182,9 @@ namespace foodServiceApp
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a Food";
             this.Load += new System.EventHandler(this.homePage_Load);
+            this.Shown += new System.EventHandler(this.homePage_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.Shown += new System.EventHandler(this.homePage_Shown);
 
         }
 

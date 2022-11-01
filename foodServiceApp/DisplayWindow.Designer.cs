@@ -32,11 +32,11 @@
             this.lbl_viewWindow = new System.Windows.Forms.Label();
             this.lbl_exp = new System.Windows.Forms.Label();
             this.lbl_category = new System.Windows.Forms.Label();
-            this.cbx_viewFood = new System.Windows.Forms.ComboBox();
+            this.cbx_viewExp = new System.Windows.Forms.ComboBox();
             this.cbx_viewCategory = new System.Windows.Forms.ComboBox();
-            this.lvw_database = new System.Windows.Forms.ListView();
             this.btn_viewFoods = new System.Windows.Forms.Button();
-            this.btn_addFood= new System.Windows.Forms.Button();
+            this.btn_addFood = new System.Windows.Forms.Button();
+            this.lbx_window = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lbl_viewWindow
@@ -74,22 +74,23 @@
             this.lbl_category.TabIndex = 2;
             this.lbl_category.Text = "View Foods in Category:";
             // 
-            // cbx_viewFood
+            // cbx_viewExp
             // 
-            this.cbx_viewFood.AllowDrop = true;
-            this.cbx_viewFood.BackColor = System.Drawing.Color.White;
-            this.cbx_viewFood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_viewFood.FormattingEnabled = true;
-            this.cbx_viewFood.Items.AddRange(new object[] {
+            this.cbx_viewExp.AllowDrop = true;
+            this.cbx_viewExp.BackColor = System.Drawing.Color.White;
+            this.cbx_viewExp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_viewExp.FormattingEnabled = true;
+            this.cbx_viewExp.Items.AddRange(new object[] {
             "Today",
             "In 1 Day",
             "In 2 Days",
             "In 3 Days",
             "In 4 Days"});
-            this.cbx_viewFood.Location = new System.Drawing.Point(255, 120);
-            this.cbx_viewFood.Name = "cbx_viewFood";
-            this.cbx_viewFood.Size = new System.Drawing.Size(121, 21);
-            this.cbx_viewFood.TabIndex = 4;
+            this.cbx_viewExp.Location = new System.Drawing.Point(255, 120);
+            this.cbx_viewExp.Name = "cbx_viewExp";
+            this.cbx_viewExp.Size = new System.Drawing.Size(121, 21);
+            this.cbx_viewExp.TabIndex = 4;
+            this.cbx_viewExp.SelectedIndexChanged += new System.EventHandler(this.cbx_viewFood_SelectedIndexChanged);
             // 
             // cbx_viewCategory
             // 
@@ -107,16 +108,6 @@
             this.cbx_viewCategory.Size = new System.Drawing.Size(121, 21);
             this.cbx_viewCategory.TabIndex = 5;
             // 
-            // lvw_database
-            // 
-            this.lvw_database.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvw_database.HideSelection = false;
-            this.lvw_database.Location = new System.Drawing.Point(458, 107);
-            this.lvw_database.Name = "lvw_database";
-            this.lvw_database.Size = new System.Drawing.Size(250, 167);
-            this.lvw_database.TabIndex = 6;
-            this.lvw_database.UseCompatibleStateImageBehavior = false;
-            // 
             // btn_viewFoods
             // 
             this.btn_viewFoods.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -130,6 +121,7 @@
             this.btn_viewFoods.TabIndex = 7;
             this.btn_viewFoods.Text = "View All";
             this.btn_viewFoods.UseVisualStyleBackColor = false;
+            this.btn_viewFoods.Click += new System.EventHandler(this.btn_viewFoods_Click);
             // 
             // btn_addFood
             // 
@@ -144,24 +136,32 @@
             this.btn_addFood.UseVisualStyleBackColor = true;
             this.btn_addFood.Click += new System.EventHandler(this.btn_addFood_Click);
             // 
-            // DisplayWindow
+            // lbx_window
+            // 
+            this.lbx_window.FormattingEnabled = true;
+            this.lbx_window.Location = new System.Drawing.Point(461, 94);
+            this.lbx_window.Name = "lbx_window";
+            this.lbx_window.Size = new System.Drawing.Size(272, 173);
+            this.lbx_window.TabIndex = 10;
+            // 
+            // displayWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbx_window);
             this.Controls.Add(this.btn_addFood);
             this.Controls.Add(this.btn_viewFoods);
-            this.Controls.Add(this.lvw_database);
             this.Controls.Add(this.cbx_viewCategory);
-            this.Controls.Add(this.cbx_viewFood);
+            this.Controls.Add(this.cbx_viewExp);
             this.Controls.Add(this.lbl_category);
             this.Controls.Add(this.lbl_exp);
             this.Controls.Add(this.lbl_viewWindow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "DisplayWindow";
+            this.Name = "displayWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Current Foods in Display";
             this.Load += new System.EventHandler(this.displayWindow_Load);
@@ -175,10 +175,10 @@
         private System.Windows.Forms.Label lbl_viewWindow;
         private System.Windows.Forms.Label lbl_exp;
         private System.Windows.Forms.Label lbl_category;
-        private System.Windows.Forms.ComboBox cbx_viewFood;
+        private System.Windows.Forms.ComboBox cbx_viewExp;
         private System.Windows.Forms.ComboBox cbx_viewCategory;
-        private System.Windows.Forms.ListView lvw_database;
         private System.Windows.Forms.Button btn_viewFoods;
         private System.Windows.Forms.Button btn_addFood;
+        private System.Windows.Forms.ListBox lbx_window;
     }
 }

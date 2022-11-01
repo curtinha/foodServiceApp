@@ -47,7 +47,7 @@
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(205, 55);
             this.lbl_title.TabIndex = 10;
-            this.lbl_title.Text = "settings";
+            this.lbl_title.Text = "Settings";
             // 
             // cbx_foodName
             // 
