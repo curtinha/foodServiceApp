@@ -124,10 +124,8 @@ namespace foodServiceApp
         private void btn_settings_Click(object sender, EventArgs e) // loads the settings tab
         {
             {
-                
-                settings f1 = new settings(fm);
-                f1.ShowDialog();
-                
+                MessageBox.Show("Settings is Under Construction"); 
+               
             }
         }
        

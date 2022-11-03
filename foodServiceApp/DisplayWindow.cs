@@ -20,7 +20,7 @@ namespace foodServiceApp
         windowManager fm;
         SqlConnection connection;
         string connectionString;
-        int selectedIndex = -1;
+      
 
 
         public displayWindow(windowManager fm)
@@ -58,132 +58,13 @@ namespace foodServiceApp
                 lbx_window.DisplayMember = "foodName";
                 lbx_window.ValueMember = "foodID";
                 lbx_window.DataSource = window;
+                
 
 
             }
 
 
 
-        }
-
-        private void cbx_viewFood_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selectedIndex = cbx_viewCategory.SelectedIndex;
-
-            if (selectedIndex == 0)
-            {
-                using (connection = new SqlConnection(connectionString))
-                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
-                {
-
-
-                    DataTable window = new DataTable();
-                    adapater.Fill(window);
-
-                    lbx_window.DisplayMember = "foodName";
-                    lbx_window.ValueMember = "foodID";
-                    lbx_window.DataSource = window;
-
-
-
-                }
-
-            }
-            else if (selectedIndex == 1)
-            {
-                using (connection = new SqlConnection(connectionString))
-                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
-                {
-
-
-                    DataTable window = new DataTable();
-                    adapater.Fill(window);
-
-                    lbx_window.DisplayMember = "foodName";
-                    lbx_window.ValueMember = "foodID";
-                    lbx_window.DataSource = window;
-
-
-                }
-
-            }
-
-            else if (selectedIndex == 2)
-            {
-                using (connection = new SqlConnection(connectionString))
-                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
-                {
-
-
-                    DataTable window = new DataTable();
-                    adapater.Fill(window);
-
-                    lbx_window.DisplayMember = "foodName";
-                    lbx_window.ValueMember = "foodID";
-                    lbx_window.DataSource = window;
-
-
-                }
-
-            }
-
-            else if (selectedIndex == 3)
-            {
-                using (connection = new SqlConnection(connectionString))
-                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
-                {
-
-
-                    DataTable window = new DataTable();
-                    adapater.Fill(window);
-
-                    lbx_window.DisplayMember = "foodName";
-                    lbx_window.ValueMember = "foodID";
-                    lbx_window.DataSource = window;
-
-
-                }
-
-                if (selectedIndex == 4)
-                {
-                    using (connection = new SqlConnection(connectionString))
-                    using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
-                    {
-
-
-                        DataTable window = new DataTable();
-                        adapater.Fill(window);
-
-                        lbx_window.DisplayMember = "foodName";
-                        lbx_window.ValueMember = "foodID";
-                        lbx_window.DataSource = window;
-
-
-                    }
-
-                }
-                else if (selectedIndex == 5)
-                {
-                    using (connection = new SqlConnection(connectionString))
-                    using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
-                    {
-
-
-                        DataTable window = new DataTable();
-                        adapater.Fill(window);
-
-                        lbx_window.DisplayMember = "foodName";
-                        lbx_window.ValueMember = "foodID";
-                        lbx_window.DataSource = window;
-
-
-                    }
-
-                }
-
-
-            }
-           
         }
 
         private void btn_viewFoods_Click(object sender, EventArgs e)
