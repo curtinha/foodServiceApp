@@ -89,6 +89,7 @@
             this.lbx_window.Name = "lbx_window";
             this.lbx_window.Size = new System.Drawing.Size(418, 212);
             this.lbx_window.TabIndex = 10;
+            this.lbx_window.SelectedIndexChanged += new System.EventHandler(this.lbx_window_SelectedIndexChanged);
             // 
             // btn_current
             // 
@@ -104,12 +105,13 @@
             this.btn_current.TabIndex = 11;
             this.btn_current.Text = "View Current";
             this.btn_current.UseVisualStyleBackColor = false;
+            this.btn_current.Click += new System.EventHandler(this.btn_current_Click);
             // 
             // btn_expired
             // 
             this.btn_expired.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_expired.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_expired.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_expired.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_expired.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_expired.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_expired.Location = new System.Drawing.Point(553, 336);
@@ -117,7 +119,7 @@
             this.btn_expired.Name = "btn_expired";
             this.btn_expired.Size = new System.Drawing.Size(205, 57);
             this.btn_expired.TabIndex = 12;
-            this.btn_expired.Text = "View Expired";
+            this.btn_expired.Text = "Mark Selected Food Expired";
             this.btn_expired.UseVisualStyleBackColor = false;
             // 
             // displayWindow

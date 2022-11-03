@@ -71,5 +71,32 @@ namespace foodServiceApp
         {
             populateWindow();
         }
+
+        private void lbx_window_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (connection = new SqlConnection(connectionString))
+            using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE foodID", connection)) ;
+                
+        }
+
+        private void btn_current_Click(object sender, EventArgs e)
+        {
+            using (connection = new SqlConnection(connectionString))
+            using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE isEXPIRED=0", connection))
+            {
+
+
+                DataTable window = new DataTable();
+                adapater.Fill(window);
+
+                lbx_window.DisplayMember = "foodName";
+                lbx_window.ValueMember = "foodID";
+                lbx_window.DataSource = window;
+
+
+
+            }
+
+        }
     }
 }
