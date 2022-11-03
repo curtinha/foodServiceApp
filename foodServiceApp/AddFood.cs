@@ -51,9 +51,25 @@ namespace foodServiceApp
             {
                 
                 MessageBox.Show("Food Added!\nProduct Name: " + txb_foodName.Text + "\nProduct Type: " + cbx_foodType.Text + "\nProduction Date: " + dtp_addFood.Text);
-                clearfields();
-                btn_viewWindow.Enabled = true; // allows the user to view what foods they have added 
                 
+                btn_viewWindow.Enabled = true; // allows the user to view what foods they have added 
+                 
+                string query = "INSERT INTO window VALUES (@foodName, @foodType, @dateAdded)";
+                
+                using (connection = new SqlConnection(connectionString))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+
+                    command.Parameters.AddWithValue("@foodName", txb_foodName.Text);
+                    command.Parameters.AddWithValue("@foodType", cbx_foodType.Text);
+                    command.Parameters.AddWithValue("@dateAdded", dtp_addFood.Value);
+
+                    command.ExecuteNonQuery();
+                }
+
+                clearfields();
+
             }
 
         }

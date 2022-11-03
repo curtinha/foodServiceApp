@@ -25,11 +25,7 @@ namespace foodServiceApp
 
 
 
-        public List<decimal> GetAnimalsettings(string type) // calls my animal initialized values
-        {
-            int speciesIndex = SearchSpecies(type);
-            return species[speciesIndex].GetSettings();
-        }
+        
 
         public void AddAnimal(string s, string n, List<int> c) // adds a new animal to the manager
         {

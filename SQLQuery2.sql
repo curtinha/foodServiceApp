@@ -1,0 +1,1 @@
+﻿INSERT INTO window (foodName, foodType, dateAdded) VALUES(@foodName, @foodType, @dateAdded)

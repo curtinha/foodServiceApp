@@ -14,7 +14,7 @@ using System.Configuration;
 namespace foodServiceApp
 {
 
-  
+
     public partial class displayWindow : Form
     {
         windowManager fm;
@@ -25,12 +25,13 @@ namespace foodServiceApp
 
         public displayWindow(windowManager fm)
         {
-            this.fm = fm;
+           
             InitializeComponent();
-
+            this.fm = fm;
             connectionString = ConfigurationManager.ConnectionStrings["foodServiceApp.Properties.Settings.windowDBConnectionString"].ConnectionString;
 
-        }       
+        }
+
         private void btn_addFood_Click(object sender, EventArgs e) // shows add food window
         {
             this.Hide();
@@ -41,10 +42,10 @@ namespace foodServiceApp
 
         private void displayWindow_Load(object sender, EventArgs e)
         {
-        populateWindow();
+            populateWindow(); // populates listbox
         }
 
-        private void populateWindow()
+        private void populateWindow() // this is the method which fills the listbox with stored values 
         {
             using (connection = new SqlConnection(connectionString))
             using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window", connection))
@@ -72,7 +73,26 @@ namespace foodServiceApp
             if (selectedIndex == 0)
             {
                 using (connection = new SqlConnection(connectionString))
-                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateadded", connection))
+                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
+                {
+
+
+                    DataTable window = new DataTable();
+                    adapater.Fill(window);
+
+                    lbx_window.DisplayMember = "foodName";
+                    lbx_window.ValueMember = "foodID";
+                    lbx_window.DataSource = window;
+
+
+
+                }
+
+            }
+            else if (selectedIndex == 1)
+            {
+                using (connection = new SqlConnection(connectionString))
+                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
                 {
 
 
@@ -86,10 +106,48 @@ namespace foodServiceApp
 
                 }
 
-            else if (selectedIndex == 1)
+            }
+
+            else if (selectedIndex == 2)
             {
+                using (connection = new SqlConnection(connectionString))
+                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
+                {
+
+
+                    DataTable window = new DataTable();
+                    adapater.Fill(window);
+
+                    lbx_window.DisplayMember = "foodName";
+                    lbx_window.ValueMember = "foodID";
+                    lbx_window.DataSource = window;
+
+
+                }
+
+            }
+
+            else if (selectedIndex == 3)
+            {
+                using (connection = new SqlConnection(connectionString))
+                using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
+                {
+
+
+                    DataTable window = new DataTable();
+                    adapater.Fill(window);
+
+                    lbx_window.DisplayMember = "foodName";
+                    lbx_window.ValueMember = "foodID";
+                    lbx_window.DataSource = window;
+
+
+                }
+
+                if (selectedIndex == 4)
+                {
                     using (connection = new SqlConnection(connectionString))
-                    using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateadded", connection))
+                    using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
                     {
 
 
@@ -100,31 +158,37 @@ namespace foodServiceApp
                         lbx_window.ValueMember = "foodID";
                         lbx_window.DataSource = window;
 
+
                     }
 
-            else if (selectedIndex == 2)
-            {
+                }
+                else if (selectedIndex == 5)
+                {
+                    using (connection = new SqlConnection(connectionString))
+                    using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE dateAdded", connection))
+                    {
+
+
+                        DataTable window = new DataTable();
+                        adapater.Fill(window);
+
+                        lbx_window.DisplayMember = "foodName";
+                        lbx_window.ValueMember = "foodID";
+                        lbx_window.DataSource = window;
+
+
+                    }
+
+                }
 
 
             }
-
-            else if (selectedIndex == 3)
-            {
-
-
-            }
-
-            else if (selectedIndex == 4)
-            {
-
-            }
-        
+           
         }
 
-        
-    }
-            private void btn_viewFoods_Click(object sender, EventArgs e)
+        private void btn_viewFoods_Click(object sender, EventArgs e)
         {
             populateWindow();
         }
+    }
 }

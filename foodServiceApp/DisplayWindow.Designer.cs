@@ -45,9 +45,10 @@
             this.lbl_viewWindow.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_viewWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_viewWindow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_viewWindow.Location = new System.Drawing.Point(133, 9);
+            this.lbl_viewWindow.Location = new System.Drawing.Point(177, 11);
+            this.lbl_viewWindow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_viewWindow.Name = "lbl_viewWindow";
-            this.lbl_viewWindow.Size = new System.Drawing.Size(515, 55);
+            this.lbl_viewWindow.Size = new System.Drawing.Size(632, 69);
             this.lbl_viewWindow.TabIndex = 0;
             this.lbl_viewWindow.Text = "Food Currently Added";
             // 
@@ -57,9 +58,10 @@
             this.lbl_exp.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_exp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_exp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_exp.Location = new System.Drawing.Point(46, 121);
+            this.lbl_exp.Location = new System.Drawing.Point(61, 149);
+            this.lbl_exp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_exp.Name = "lbl_exp";
-            this.lbl_exp.Size = new System.Drawing.Size(201, 20);
+            this.lbl_exp.Size = new System.Drawing.Size(246, 25);
             this.lbl_exp.TabIndex = 1;
             this.lbl_exp.Text = "View Foods Expiring on:";
             // 
@@ -68,9 +70,10 @@
             this.lbl_category.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_category.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_category.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_category.Location = new System.Drawing.Point(46, 213);
+            this.lbl_category.Location = new System.Drawing.Point(61, 262);
+            this.lbl_category.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_category.Name = "lbl_category";
-            this.lbl_category.Size = new System.Drawing.Size(203, 23);
+            this.lbl_category.Size = new System.Drawing.Size(271, 28);
             this.lbl_category.TabIndex = 2;
             this.lbl_category.Text = "View Foods in Category:";
             // 
@@ -86,9 +89,10 @@
             "In 2 Days",
             "In 3 Days",
             "In 4 Days"});
-            this.cbx_viewExp.Location = new System.Drawing.Point(255, 120);
+            this.cbx_viewExp.Location = new System.Drawing.Point(340, 148);
+            this.cbx_viewExp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbx_viewExp.Name = "cbx_viewExp";
-            this.cbx_viewExp.Size = new System.Drawing.Size(121, 21);
+            this.cbx_viewExp.Size = new System.Drawing.Size(160, 24);
             this.cbx_viewExp.TabIndex = 4;
             this.cbx_viewExp.SelectedIndexChanged += new System.EventHandler(this.cbx_viewFood_SelectedIndexChanged);
             // 
@@ -103,9 +107,10 @@
             "Salad",
             "Sandwich",
             "Platter"});
-            this.cbx_viewCategory.Location = new System.Drawing.Point(255, 213);
+            this.cbx_viewCategory.Location = new System.Drawing.Point(340, 262);
+            this.cbx_viewCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbx_viewCategory.Name = "cbx_viewCategory";
-            this.cbx_viewCategory.Size = new System.Drawing.Size(121, 21);
+            this.cbx_viewCategory.Size = new System.Drawing.Size(160, 24);
             this.cbx_viewCategory.TabIndex = 5;
             // 
             // btn_viewFoods
@@ -115,9 +120,10 @@
             this.btn_viewFoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_viewFoods.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_viewFoods.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_viewFoods.Location = new System.Drawing.Point(255, 337);
+            this.btn_viewFoods.Location = new System.Drawing.Point(340, 415);
+            this.btn_viewFoods.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_viewFoods.Name = "btn_viewFoods";
-            this.btn_viewFoods.Size = new System.Drawing.Size(154, 46);
+            this.btn_viewFoods.Size = new System.Drawing.Size(205, 57);
             this.btn_viewFoods.TabIndex = 7;
             this.btn_viewFoods.Text = "View All";
             this.btn_viewFoods.UseVisualStyleBackColor = false;
@@ -128,9 +134,10 @@
             this.btn_addFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_addFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_addFood.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_addFood.Location = new System.Drawing.Point(415, 337);
+            this.btn_addFood.Location = new System.Drawing.Point(553, 415);
+            this.btn_addFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_addFood.Name = "btn_addFood";
-            this.btn_addFood.Size = new System.Drawing.Size(154, 46);
+            this.btn_addFood.Size = new System.Drawing.Size(205, 57);
             this.btn_addFood.TabIndex = 8;
             this.btn_addFood.Text = "Add Food ";
             this.btn_addFood.UseVisualStyleBackColor = true;
@@ -139,17 +146,19 @@
             // lbx_window
             // 
             this.lbx_window.FormattingEnabled = true;
-            this.lbx_window.Location = new System.Drawing.Point(461, 94);
+            this.lbx_window.ItemHeight = 16;
+            this.lbx_window.Location = new System.Drawing.Point(615, 116);
+            this.lbx_window.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbx_window.Name = "lbx_window";
-            this.lbx_window.Size = new System.Drawing.Size(272, 173);
+            this.lbx_window.Size = new System.Drawing.Size(361, 212);
             this.lbx_window.TabIndex = 10;
             // 
             // displayWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lbx_window);
             this.Controls.Add(this.btn_addFood);
             this.Controls.Add(this.btn_viewFoods);
@@ -160,6 +169,7 @@
             this.Controls.Add(this.lbl_viewWindow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "displayWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
