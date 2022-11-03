@@ -15,7 +15,7 @@ namespace foodServiceApp
 {
     public partial class addFood : Form
     {
-        string connectionString;
+        string connectionString; // stores connection string to database
         SqlConnection connection;
 
         windowManager fm;
@@ -25,12 +25,6 @@ namespace foodServiceApp
             this.fm = fm;
             cbx_foodType.SelectedIndex = Global.foodIndex; // carries through selected user food option
             connectionString = ConfigurationManager.ConnectionStrings["foodServiceApp.Properties.Settings.windowDBConnectionString"].ConnectionString;
-        }
-
-        private void addFood_Load(object sender, EventArgs e)
-        {
-            
-
         }
 
         private void btn_addWindow_Click(object sender, EventArgs e)
@@ -53,13 +47,13 @@ namespace foodServiceApp
                 MessageBox.Show("Food Added!\nProduct Name: " + txb_foodName.Text + "\nProduct Type: " + cbx_foodType.Text + "\nProduction Date: " + dtp_addFood.Text);
                 
                 btn_viewWindow.Enabled = true; // allows the user to view what foods they have added 
-                clearfields();
+                
                 string query = "INSERT INTO window VALUES (@foodName, @foodType, @dateAdded, @isExpired)";
                 
                 using (connection = new SqlConnection(connectionString))
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    connection.Open();
+                    connection.Open(); 
 
                     command.Parameters.AddWithValue("@foodName", txb_foodName.Text);
                     command.Parameters.AddWithValue("@foodType", cbx_foodType.Text);
@@ -67,10 +61,10 @@ namespace foodServiceApp
                     command.Parameters.AddWithValue("@dateAdded", dtp_addFood.Value);
                     command.Parameters.AddWithValue("@isExpired", 0);
 
-                    command.ExecuteNonQuery();
+                    command.ExecuteNonQuery(); // adds values into a new row of the database
                 }
 
-                clearfields();
+                clearfields(); // resets form
 
             }
 

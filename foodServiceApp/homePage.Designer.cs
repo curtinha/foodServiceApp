@@ -181,7 +181,7 @@ namespace foodServiceApp
             this.Name = "homePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a Food";
-            this.Load += new System.EventHandler(this.homePage_Load);
+          
             this.Shown += new System.EventHandler(this.homePage_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

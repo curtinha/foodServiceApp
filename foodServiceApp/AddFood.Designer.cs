@@ -172,7 +172,7 @@
             this.Name = "addFood";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Food Screen";
-            this.Load += new System.EventHandler(this.addFood_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

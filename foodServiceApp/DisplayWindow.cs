@@ -18,7 +18,7 @@ namespace foodServiceApp
     public partial class displayWindow : Form
     {
         windowManager fm;
-        SqlConnection connection;
+        SqlConnection connection; // stores connection string
         string connectionString;
       
 
@@ -32,7 +32,7 @@ namespace foodServiceApp
 
         }
 
-        private void btn_addFood_Click(object sender, EventArgs e) // shows add food window
+        private void btn_addFood_Click(object sender, EventArgs e) // loads add food window
         {
             this.Hide();
             addFood window = new addFood(fm);
@@ -69,7 +69,7 @@ namespace foodServiceApp
 
         private void btn_viewFoods_Click(object sender, EventArgs e)
         {
-            populateWindow();
+            populateWindow(); // repopulates for user to view all 
         }
 
         private void lbx_window_SelectedIndexChanged(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace foodServiceApp
                 
         }
 
-        private void btn_current_Click(object sender, EventArgs e)
+        private void btn_current_Click(object sender, EventArgs e) // shows all foods which have not been marked expired
         {
             using (connection = new SqlConnection(connectionString))
             using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE isEXPIRED=0", connection))

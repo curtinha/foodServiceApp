@@ -23,14 +23,7 @@ namespace foodServiceApp
 
         }
 
-
-
-        private void homePage_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void homePage_Shown(object sender, EventArgs e)
+        private void homePage_Shown(object sender, EventArgs e) // actions once form is shown on screen 
         {
            MessageBox.Show("Welcome to the Food Service App \nPlease click an food to add or View the current Display Window"); // displays welcome message
             
