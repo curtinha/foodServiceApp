@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace foodServiceApp
@@ -20,12 +21,12 @@ namespace foodServiceApp
         windowManager fm;
         SqlConnection connection; // stores connection string
         string connectionString;
-      
+
 
 
         public displayWindow(windowManager fm)
         {
-           
+
             InitializeComponent();
             this.fm = fm;
             connectionString = ConfigurationManager.ConnectionStrings["foodServiceApp.Properties.Settings.windowDBConnectionString"].ConnectionString;
@@ -76,6 +77,8 @@ namespace foodServiceApp
         {
             using (connection = new SqlConnection(connectionString))
             using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE foodID", connection)) ;
+
+            MessageBox.Show("Selected Item:\nName:\nProduction Date:\nType:\nExpired:");
                 
         }
 
