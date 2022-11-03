@@ -121,6 +121,7 @@
             this.btn_expired.TabIndex = 12;
             this.btn_expired.Text = "Mark Selected Food Expired";
             this.btn_expired.UseVisualStyleBackColor = false;
+            this.btn_expired.Click += new System.EventHandler(this.btn_expired_Click);
             // 
             // displayWindow
             // 

@@ -82,7 +82,7 @@ namespace foodServiceApp
         private void btn_current_Click(object sender, EventArgs e) // shows all foods which have not been marked expired
         {
             using (connection = new SqlConnection(connectionString))
-            using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE isEXPIRED=0", connection))
+            using (SqlDataAdapter adapater = new SqlDataAdapter("SELECT * FROM window WHERE isExpired=0", connection))
             {
 
 
@@ -97,6 +97,23 @@ namespace foodServiceApp
 
             }
 
+        }
+
+        private void btn_expired_Click(object sender, EventArgs e)
+        {
+            string query = "Update window SET isExpired = @isExpired WHERE id = @foodID";
+
+            using (connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                connection.Open();
+
+                command.Parameters.AddWithValue("@isExpired",1);
+                command.Parameters.AddWithValue("@foodID", lbx_window.SelectedValue);
+               
+
+                command.ExecuteNonQuery(); // changes food to expired
+            }
         }
     }
 }

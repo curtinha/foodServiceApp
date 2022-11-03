@@ -58,8 +58,8 @@ namespace foodServiceApp
                     command.Parameters.AddWithValue("@foodName", txb_foodName.Text);
                     command.Parameters.AddWithValue("@foodType", cbx_foodType.Text);
                     command.Parameters.AddWithValue("@dateAdded", dtp_addFood.Value);
-                    command.Parameters.AddWithValue("@dateAdded", dtp_addFood.Value);
                     command.Parameters.AddWithValue("@isExpired", 0);
+                   
 
                     command.ExecuteNonQuery(); // adds values into a new row of the database
                 }
