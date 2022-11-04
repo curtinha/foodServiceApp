@@ -89,6 +89,7 @@
             this.lbx_window.Name = "lbx_window";
             this.lbx_window.Size = new System.Drawing.Size(418, 212);
             this.lbx_window.TabIndex = 10;
+            this.lbx_window.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbx_window_MouseClick);
             this.lbx_window.SelectedIndexChanged += new System.EventHandler(this.lbx_window_SelectedIndexChanged);
             // 
             // btn_current

@@ -1,1 +1,1 @@
-﻿SELECT * FROM window
+﻿SELECT * FROM window WHERE foodName = 'd              '
